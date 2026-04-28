@@ -70,13 +70,13 @@ export function PaymentAccordion<T>({
       headerText: "text-blue-100",
     },
     orange: {
-      header: "bg-gradient-to-b from-[#ff9900] to-[#ec5406]",
-      border: "border-orange-100",
-      hover: "hover:bg-orange-50/50",
-      content: "bg-orange-50/30",
-      primary: "text-orange-700",
-      secondary: "text-orange-900",
-      headerText: "text-orange-100",
+      header: "bg-gradient-to-b from-[#00ae9d] to-[#2d4258]",
+      border: "border-teal-100",
+      hover: "hover:bg-teal-50/50",
+      content: "bg-teal-50/30",
+      primary: "text-teal-700",
+      secondary: "text-teal-900",
+      headerText: "text-teal-100",
     },
   };
 
@@ -121,13 +121,13 @@ export function PaymentAccordion<T>({
               <AccordionItem
                 key={item.id}
                 value={`item-${item.id}`}
-                className={`border-b ${colors.border} last:border-b-0 ${summary.hasWarning ? "bg-amber-50/50 border-amber-200" : ""
+                className={`border-b ${colors.border} last:border-b-0 ${summary.hasWarning ? "bg-teal-50/50 border-teal-200" : ""
                   }`}
               >
                 <AccordionTrigger
                   className={`px-4 sm:px-6 py-4 hover:no-underline ${colors.hover
                     } transition-colors ${summary.hasWarning
-                      ? "bg-amber-50/50 hover:bg-amber-100/50"
+                      ? "bg-teal-50/50 hover:bg-teal-100/50"
                       : ""
                     }`}
                   onClick={() => onItemClick?.(item.data, index)}
@@ -143,7 +143,7 @@ export function PaymentAccordion<T>({
                             onSelectionChange?.(item.id, e.target.checked);
                           }}
                           onClick={(e) => e.stopPropagation()}
-                          className="h-4 w-4 rounded border border-black/40 text-[#ff6400] focus:ring-[#ff6400] cursor-pointer flex-shrink-0"
+                          className="h-4 w-4 rounded border border-black/40 text-[#00ae9d] focus:ring-[#00ae9d] cursor-pointer flex-shrink-0"
                           aria-label={`Seleccionar cuenta ${item.id}`}
                         />
                       )}

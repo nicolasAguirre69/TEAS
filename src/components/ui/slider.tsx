@@ -38,7 +38,7 @@ function Slider({
 
   const thumbStyles = {
     default: "border-primary ring-ring/50 bg-white",
-    white: "border-orange-500 ring-orange-500/50 bg-orange-500",
+    white: "border-teal-500 ring-teal-500/50 bg-teal-500",
   };
 
   return (

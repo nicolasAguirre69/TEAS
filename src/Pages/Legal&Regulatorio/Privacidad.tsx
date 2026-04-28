@@ -25,7 +25,7 @@ const sections = [
     icon: Cookie,
     paragraphs: [
       <>
-        <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span>{" "}
+        <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span>{" "}
         usa cookies para guardar información sobre las preferencias de los
         visitantes, registrar qué páginas visita el usuario y personalizar el
         contenido según el tipo de navegador.
@@ -38,9 +38,9 @@ const sections = [
     paragraphs: [
       <>
         Google, como proveedor externo, usa cookies para mostrar anuncios en{" "}
-        <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span>.
+        <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span>.
         La cookie DART permite a Google mostrar anuncios basados en las visitas
-        a <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span>{" "}
+        a <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span>{" "}
         y otros sitios. Los usuarios pueden optar por no usar la cookie DART
         visitando la política de privacidad de Google en{" "}
         {externalLink(
@@ -50,12 +50,12 @@ const sections = [
       </>,
       "Los servidores de anuncios de terceros usan tecnología para enviar anuncios directamente a su navegador. Reciben automáticamente su dirección IP. También pueden usar otras tecnologías, como cookies o JavaScript, para medir la efectividad de sus anuncios o personalizar el contenido publicitario que ve.",
       <>
-        <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span>
+        <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span>
         no tiene acceso ni control sobre estas cookies usadas por anunciantes
         externos. Debe consultar las políticas de privacidad de estas compañías
         para obtener más información sobre sus prácticas. La política de
         privacidad de{" "}
-        <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span> no
+        <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span> no
         se aplica a otros anunciantes o sitios web.
       </>,
       "Si desea desactivar las cookies, puede hacerlo a través de las opciones de su navegador. Más información sobre cómo gestionar cookies se puede encontrar en los sitios web del navegador.",
@@ -83,13 +83,13 @@ export default function Privacidad() {
             </CardTitle>
             <CardDescription className="max-w-2xl text-base text-muted-foreground">
               En{" "}
-              <span className="font-semibold text-[#ff6400]">
+              <span className="font-semibold text-[#00ae9d]">
                 INTTELGO S.A.S.
               </span>
               , la privacidad de nuestros visitantes es muy importante para
               nosotros. Este documento explica qué tipo de información personal
               se recibe y se recopila en{" "}
-              <span className="font-semibold text-[#ff6400]">
+              <span className="font-semibold text-[#00ae9d]">
                 INTTELGO S.A.S.
               </span>{" "}
               y cómo se utiliza.
@@ -104,14 +104,14 @@ export default function Privacidad() {
               className="border-black/10 shadow-lg shadow-black/5"
             >
               <CardHeader className="flex items-center gap-4">
-                <div className="mt-1 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#fff4ec]">
-                  <Icon className="h-6 w-6 text-[#ff6400]" />
+                <div className="mt-1 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#e6f7f5]">
+                  <Icon className="h-6 w-6 text-[#00ae9d]" />
                 </div>
                 <div>
-                  <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+                  <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
                     {title}
                   </Badge>
-                  <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+                  <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
                     {title}
                   </CardTitle>
                 </div>
@@ -123,7 +123,7 @@ export default function Privacidad() {
                 {title === "Cookies DART de Google" && (
                   <Button
                     variant="link"
-                    className="p-0 text-[#ff6400] hover:text-[#d95300]"
+                    className="p-0 text-[#00ae9d] hover:text-[#2d4258]"
                     asChild
                   >
                     <a

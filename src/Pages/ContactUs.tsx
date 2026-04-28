@@ -252,7 +252,7 @@ export default function ContactUs() {
                     showSupportCard ? "[transform:rotateY(180deg)]" : ""
                   )}
                 >
-                  <div className="absolute inset-0 -rotate-6 rounded-[2.5rem] bg-gradient-to-br from-[#FF9900] via-[#EC5406] to-[#D13A00] shadow-[0_18px_32px_rgba(0,0,0,0.35)]" />
+                  <div className="absolute inset-0 -rotate-6 rounded-[2.5rem] bg-gradient-to-br from-[#00ae9d] via-[#2d4258] to-[#1f2d3a] shadow-[0_18px_32px_rgba(0,0,0,0.35)]" />
                   <div className="absolute inset-2 rounded-[2.25rem] bg-white/90" />
 
                   {/* Frente */}
@@ -303,7 +303,7 @@ export default function ContactUs() {
                   </div>
 
                   {/* Reverso */}
-                  <div className="absolute inset-0 flex flex-col justify-between rounded-[2.5rem] bg-gradient-to-br from-[#FF9900] via-[#EC5406] to-[#D13A00] p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                  <div className="absolute inset-0 flex flex-col justify-between rounded-[2.5rem] bg-gradient-to-br from-[#00ae9d] via-[#2d4258] to-[#1f2d3a] p-6 text-white [backface-visibility:hidden] [transform:rotateY(180deg)]">
                     <div className="space-y-3">
                       <div className="flex justify-between text-white/80">
                         <span>Línea</span>
@@ -369,7 +369,7 @@ export default function ContactUs() {
               </span>
               <div className="grid gap-6 md:grid-cols-[minmax(0,_auto)_1fr] md:items-center">
                 <div className="text-3xl font-semibold text-black transition-colors duration-200 sm:text-4xl md:text-5xl">
-                  <span className="transition-colors duration-200 hover:text-[#EC5406]">
+                  <span className="transition-colors duration-200 hover:text-[#2d4258]">
                     {emailAddress}
                   </span>
                 </div>
@@ -391,7 +391,7 @@ export default function ContactUs() {
                   >
                     <Card
                       className={cn(
-                        "w-10 h-10 sm:w-15 sm:h-15 md:w-25 md:h-25 lg:w-30 lg:h-30 p-0 hover:shadow-orange-500/50 hover:scale-105 hover:bg-gradient-to-b hover:from-[#FF9900] hover:to-[#EC5406] border-none rounded-full not-last:",
+                        "w-10 h-10 sm:w-15 sm:h-15 md:w-25 md:h-25 lg:w-30 lg:h-30 p-0 hover:shadow-teal-500/50 hover:scale-105 hover:bg-gradient-to-b hover:from-[#00ae9d] hover:to-[#2d4258] border-none rounded-full not-last:",
                         red.classname
                       )}
                     >
@@ -410,7 +410,7 @@ export default function ContactUs() {
           </section>
 
           <div className="relative">
-            <Card className="absolute -top-10 lg:-top-20 right-10 p-0 w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 lg:w-40 lg:h-40 rounded-full bg-gradient-to-b from-[#FF9900] to-[#EC5406] border-none">
+            <Card className="absolute -top-10 lg:-top-20 right-10 p-0 w-20 h-20 sm:w-25 sm:h-25 md:w-30 md:h-30 lg:w-40 lg:h-40 rounded-full bg-gradient-to-b from-[#00ae9d] to-[#2d4258] border-none">
               <CardContent className="px-0 p-3 lg:p-5 flex justify-center items-center">
                 <img
                   src="/mano-inttelgo-50px.svg"

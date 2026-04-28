@@ -16,7 +16,7 @@ const planFeatures = [
 const plansData = [
   {
     title: "Plan Gamer",
-    speed: "500",
+    speed: "920",
     price: "",
     category: "Gamer",
     caracteristicas: [
@@ -29,7 +29,7 @@ const plansData = [
   {
     title: null,
     speed: "200",
-    price: "$80.000",
+    price: "$90.000",
     category: "Básico",
     caracteristicas: [
       "Navegación fluida y redes sociales",
@@ -42,8 +42,8 @@ const plansData = [
   },
   {
     title: null,
-    speed: "300",
-    price: "$95.000",
+    speed: "350",
+    price: "$110.000",
     category: "Básico",
     caracteristicas: [
       "Streaming Full HD en varios dispositivos",
@@ -57,7 +57,7 @@ const plansData = [
   {
     title: null,
     speed: "500",
-    price: "$115.000",
+    price: "$130.000",
     category: "Básico",
     caracteristicas: [
       "Streaming 4K en múltiples pantallas",
@@ -70,8 +70,8 @@ const plansData = [
   },
   {
     title: null,
-    speed: "750",
-    price: "$145.000",
+    speed: "700",
+    price: "$150.000",
     category: "Básico",
     caracteristicas: [
       "Gaming competitivo",
@@ -81,20 +81,7 @@ const plansData = [
       "Descargas ultra rápidas",
     ],
     extras: ["+TV"],
-  },
-  {
-    title: null,
-    speed: "920",
-    price: "$175.000",
-    category: "Básico",
-    caracteristicas: [
-      "Rendimiento cercano a 1 Gbps real",
-      "Streaming 8K sin buffering",
-      "Gaming competitivo profesional",
-      "Ideal para empresas pequeñas o streamers",
-    ],
-    extras: ["+TV"],
-  },
+  }
 ];
 
 export default function Television() {
@@ -117,7 +104,7 @@ export default function Television() {
         <div className="space-y-6 px-4 md:px-0">
           <div className="space-y-4">
             <div className="inline-block">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-orange-500/30 mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-teal-500/30 mb-4">
                 Televisión de alta calidad
               </span>
             </div>
@@ -126,11 +113,11 @@ export default function Television() {
                 TELEVISIÓN HD Y CANALES PARA TODA LA FAMILIA
               </span>
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full" />
+            <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full" />
             <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
               Disfruta de la mejor programación con señal digital en alta
               definición, canales nacionales e internacionales y{" "}
-              <span className="font-semibold text-orange-600">
+              <span className="font-semibold text-teal-600">
                 paquetes que combinan TV + Internet
               </span>
               .
@@ -139,7 +126,7 @@ export default function Television() {
 
           <div className="pt-6 space-y-5">
             <div className="flex items-center gap-3">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/30">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30">
                 <Check className="h-5 w-5 text-white" />
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -154,7 +141,7 @@ export default function Television() {
                     key={index}
                     className="flex items-start gap-4 group hover:translate-x-1 transition-transform duration-300"
                   >
-                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md shadow-orange-500/30 group-hover:shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-110">
+                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md shadow-teal-500/30 group-hover:shadow-lg group-hover:shadow-teal-500/50 transition-all duration-300 group-hover:scale-110">
                       <Check className="h-4 w-4 text-white" />
                     </div>
                     <span className="text-gray-800 text-base md:text-lg font-medium leading-relaxed pt-0.5 group-hover:text-gray-900 transition-colors">
@@ -167,7 +154,6 @@ export default function Television() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

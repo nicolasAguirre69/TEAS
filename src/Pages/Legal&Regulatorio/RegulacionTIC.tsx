@@ -96,7 +96,7 @@ export default function RegulacionTIC() {
                   .slice(0, Math.ceil(regulaciones.length / 2))
                   .map(({ texto, url }) => (
                     <li key={url} className="flex items-start gap-2">
-                      <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#ff6400]" />
+                      <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#00ae9d]" />
                       {externalLink(texto, url)}
                     </li>
                   ))}
@@ -106,7 +106,7 @@ export default function RegulacionTIC() {
                   .slice(Math.ceil(regulaciones.length / 2))
                   .map(({ texto, url }) => (
                     <li key={url} className="flex items-start gap-2">
-                      <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#ff6400]" />
+                      <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#00ae9d]" />
                       {externalLink(texto, url)}
                     </li>
                   ))}

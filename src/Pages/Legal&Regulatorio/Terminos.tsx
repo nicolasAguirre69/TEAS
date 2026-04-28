@@ -17,7 +17,7 @@ const terms = [
   <>
     No puede crear un enlace a este sitio web desde otro sitio web o documento
     sin el consentimiento previo por escrito de{" "}
-    <span className="font-semibold text-[#ff6400]">INTTELGO S.A.S.</span>.
+    <span className="font-semibold text-[#00ae9d]">INTTELGO S.A.S.</span>.
   </>,
 ];
 
@@ -37,20 +37,20 @@ export default function Terminos() {
             subtitle={
               <>
                 Bienvenido a
-                <span className="font-semibold text-[#ff6400]">
+                <span className="font-semibold text-[#00ae9d]">
                   INTTELGO S.A.S.
                 </span>{" "}
                 Si continúa navegando y utilizando este sitio web, acepta
                 cumplir con los siguientes términos y condiciones de uso, que
                 junto con nuestra política de privacidad regulan la relación de{" "}
-                <span className="font-semibold text-[#ff6400]">
+                <span className="font-semibold text-[#00ae9d]">
                   INTTELGO S.A.S.
                 </span>
                 con usted en relación a este sitio web. Si continúa navegando y
                 utilizando este sitio web, acepta cumplir con los siguientes
                 términos y condiciones de uso, que junto con nuestra política de
                 privacidad regulan la relación de
-                <span className="font-semibold text-[#ff6400]">
+                <span className="font-semibold text-[#00ae9d]">
                   INTTELGO S.A.S.
                 </span>{" "}
                 con usted en relación a este sitio web.
@@ -69,7 +69,7 @@ export default function Terminos() {
           <CardContent className="space-y-4 text-base text-muted-foreground">
             <p>
               El término{" "}
-              <span className="font-semibold text-[#ff6400]">
+              <span className="font-semibold text-[#00ae9d]">
                 INTTELGO S.A.S.
               </span>{" "}
               o “nosotros” se refiere al propietario del sitio web. El término
@@ -87,7 +87,7 @@ export default function Terminos() {
                 <span>Condiciones de uso</span>
                 <Badge
                   variant="secondary"
-                  className="rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]"
+                  className="rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]"
                 >
                   Obligatorio para usuarios
                 </Badge>
@@ -99,7 +99,7 @@ export default function Terminos() {
           <CardContent className="space-y-3 text-base text-muted-foreground">
             {terms.map((term, index) => (
               <div key={`term-${index}`} className="flex items-start gap-3">
-                <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                 <p>{term}</p>
               </div>
             ))}
@@ -109,7 +109,7 @@ export default function Terminos() {
         <Separator className="bg-black/10" />
         <Button
           variant="link"
-          className="self-start p-0 text-sm font-semibold text-[#ff6400] hover:text-[#d95300]"
+          className="self-start p-0 text-sm font-semibold text-[#00ae9d] hover:text-[#2d4258]"
           asChild
         >
           <a href="mailto:info@inttelgo.com">¿Tienes dudas? Contáctanos</a>

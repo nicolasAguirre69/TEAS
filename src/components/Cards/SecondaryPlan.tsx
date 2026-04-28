@@ -34,7 +34,7 @@ function SecondaryPlan({ plan }: SecondaryPlanProps) {
       {plan.extras.map((extra, index) => (
         <Card
           key={`extra-${index}`}
-          className="bg-gradient-to-r from-[#ff9900] to-[#ec5406] absolute left-1/25 -translate-x-1/2 z-11 p-3 border-none"
+          className="bg-gradient-to-r from-[#00ae9d] to-[#2d4258] absolute left-1/25 -translate-x-1/2 z-11 p-3 border-none"
           style={{
             top: `${1 + index * 4.5}rem`,
           }}

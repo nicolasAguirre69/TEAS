@@ -47,7 +47,7 @@ function TimelineEventContent({
       >
         {/* Año - siempre visible */}
         <div
-          className="text-7xl md:text-8xl font-black mb-4 bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 bg-clip-text text-transparent transition-opacity duration-300"
+          className="text-7xl md:text-8xl font-black mb-4 bg-gradient-to-br from-teal-600 via-teal-500 to-teal-400 bg-clip-text text-transparent transition-opacity duration-300"
           style={{
             fontFamily: '"Space Grotesk", sans-serif',
             letterSpacing: "-0.02em",
@@ -162,7 +162,7 @@ export default function SobreNosotros() {
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.1] tracking-tight">
                 <span className="text-white/95 drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
                   Un{" "}
-                  <span className="bg-gradient-to-r from-orange-400 via-[#ec5406] to-orange-600 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,84,6,0.5)]">
+                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
                     internet
                   </span>{" "}
                   para
@@ -170,7 +170,7 @@ export default function SobreNosotros() {
                 <br />
                 <span className="text-white/95 drop-shadow-[0_2px_20px_rgba(0,0,0,0.4)]">
                   la{" "}
-                  <span className="bg-gradient-to-r from-orange-400 via-[#ec5406] to-orange-600 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(236,84,6,0.5)]">
+                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
                     comunidad
                   </span>
                   .

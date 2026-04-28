@@ -93,7 +93,7 @@ export default function Channels() {
                     <div
                       className={`relative w-24 h-24 md:w-28 md:h-28 flex items-center justify-center bg-white rounded-lg transition-all duration-700 ease-out ${
                         isCenterCard
-                          ? "shadow-2sx shadow-orange-500/50 ring-4 ring-orange-400/20 scale-[1.8] md:scale-[1.5]"
+                          ? "shadow-2sx shadow-blue-500/50 ring-4 ring-blue-400/20 scale-[1.8] md:scale-[1.5]"
                           : "shadow-sm scale-100 opacity-70"
                       }`}
                       style={{
@@ -102,7 +102,7 @@ export default function Channels() {
                     >
                       {/* Efecto de glow adicional para el card del centro */}
                       {isCenterCard && (
-                        <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/30 via-orange-400/10 to-orange-500/30 rounded-lg blur-xl animate-pulse" />
+                        <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/30 via-blue-400/10 to-blue-500/30 rounded-lg blur-xl animate-pulse" />
                       )}
 
                       <img

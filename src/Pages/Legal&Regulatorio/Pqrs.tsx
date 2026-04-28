@@ -41,7 +41,7 @@ export default function Pqrs() {
               correo electrónico a{" "}
               <a
                 href="mailto:pqr@inttelgo.com"
-                className="font-semibold text-[#ff6400] hover:underline"
+                className="font-semibold text-[#00ae9d] hover:underline"
               >
                 pqr@inttelgo.com
               </a>{" "}
@@ -52,7 +52,7 @@ export default function Pqrs() {
                 <Badge
                   key={label}
                   variant="secondary"
-                  className="rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]"
+                  className="rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]"
                 >
                   {label}
                 </Badge>
@@ -80,15 +80,15 @@ export default function Pqrs() {
             <ol className="space-y-3 text-base leading-relaxed text-black">
               {pasos.map((paso, index) => (
                 <li key={paso} className="flex items-start gap-3">
-                  <span className="mt-[2px] flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#ff6400] text-sm font-semibold text-white">
+                  <span className="mt-[2px] flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#00ae9d] text-sm font-semibold text-white">
                     {index + 1}
                   </span>
                   <span>{paso}</span>
                 </li>
               ))}
             </ol>
-            <div className="flex items-start gap-3 rounded-2xl border border-[#ff6400]/40 bg-[#fff4ec] p-5 text-sm text-[#a13d00]">
-              <AlertTriangle className="mt-1 h-6 w-6 flex-shrink-0 text-[#ff6400]" />
+            <div className="flex items-start gap-3 rounded-2xl border border-[#00ae9d]/40 bg-[#e6f7f5] p-5 text-sm text-[#1f2d3a]">
+              <AlertTriangle className="mt-1 h-6 w-6 flex-shrink-0 text-[#00ae9d]" />
               <p className="font-medium">
                 Asegúrate de que la información sea clara y completa para
                 agilizar la respuesta a tu PQR.

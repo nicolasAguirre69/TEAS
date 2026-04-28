@@ -18,10 +18,11 @@ interface Plan {
   category: string;
   caracteristicas: string[];
 }
+
 const planes: Plan[] = [
   {
     speed: "200",
-    price: "55,000",
+    price: "65,000",
     category: "Básico",
     caracteristicas: [
       "Velocidad simétrica",
@@ -30,8 +31,8 @@ const planes: Plan[] = [
     ],
   },
   {
-    speed: "300",
-    price: "70,000",
+    speed: "350",
+    price: "85,000",
     category: "Básico",
     caracteristicas: [
       "Velocidad simétrica",
@@ -41,7 +42,7 @@ const planes: Plan[] = [
   },
   {
     speed: "500",
-    price: "90,000",
+    price: "105,000",
     category: "Básico",
     caracteristicas: [
       "Velocidad simétrica",
@@ -50,25 +51,15 @@ const planes: Plan[] = [
     ],
   },
   {
-    speed: "750",
-    price: "55,000",
+    speed: "700",
+    price: "125,000",
     category: "Básico",
     caracteristicas: [
       "Velocidad simétrica",
       "Tareas Básicas",
       "Módem con WiFi",
     ],
-  },
-  {
-    speed: "920",
-    price: "55,000",
-    category: "Básico",
-    caracteristicas: [
-      "Velocidad simétrica",
-      "Tareas Básicas",
-      "Módem con WiFi",
-    ],
-  },
+  }
 ];
 
 export default function Planes() {
@@ -87,7 +78,6 @@ export default function Planes() {
   useEffect(() => {
     if (!api) return;
 
-    // Actualizar el índice seleccionado cuando cambia el slide
     const onSelect = () => {
       setSelectedIndex(api.selectedScrollSnap());
     };
@@ -100,19 +90,25 @@ export default function Planes() {
     };
   }, [api]);
 
-  // Función para determinar si un card está en el centro
   const isCenter = (index: number) => {
     return index === selectedIndex;
   };
 
   return (
-    <div className="w-full  overflow-hidden relative py-2 md:py-8 flex flex-col items-center justify-center">
+    <div className="w-full overflow-hidden relative py-2 md:py-8 flex flex-col items-center justify-center">
+      
+      {/* TÍTULO */}
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-8">
-        Mas megas por el
+        Más megas por el
         <br />
-        <span className="text-orange-500 font-extrabold">mismo precio</span>
+        <span className="text-[#00C853] font-extrabold">
+          mismo precio
+        </span>
       </h2>
+
       <div className="w-full md:h-[600px] container mx-auto px-4 md:px-16 lg:px-32 flex flex-col items-center justify-center">
+        
+        {/* CAROUSEL */}
         <Carousel
           setApi={setApi}
           className="w-full mx-auto flex items-center justify-center"
@@ -136,13 +132,14 @@ export default function Planes() {
                   className="basis-full md:basis-1/3 flex justify-center items-center"
                 >
                   <div className="w-full flex flex-col items-center justify-center gap-4">
+                    
                     <div className="w-full flex items-center justify-center py-6 md:py-12 px-12 md:px-6">
                       <TranslucentPlan
                         plan={plan}
                         className={cn(
                           "relative flex justify-center transition-all duration-700 ease-out h-[200px] sm:h-[150px] md:h-[180px] lg:h-[200px] xl:h-[200px] w-45 sm:w-70 md:w-40 lg:w-50 xl:w-50",
                           isCenterCard
-                            ? "shadow-2xl shadow-orange-500/50 ring-4 ring-orange-400/20 scale-105 md:scale-[1.5]"
+                            ? "shadow-2xl shadow-[#00C853]/50 ring-4 ring-[#00ae9d]/30 scale-105 md:scale-[1.5] backdrop-blur-md"
                             : "shadow-sm scale-100 opacity-70"
                         )}
                         style={{
@@ -150,8 +147,9 @@ export default function Planes() {
                         }}
                       />
                     </div>
+
                     {isCenterCard && (
-                      <Separator className="!w-60 sm:!w-80 md:!w-full h-2 bg-white" />
+                      <Separator className="!w-60 sm:!w-80 md:!w-full h-2 bg-[#00ae9d]" />
                     )}
                   </div>
                 </CarouselItem>
@@ -160,19 +158,19 @@ export default function Planes() {
           </CarouselContent>
         </Carousel>
 
-        {/* Botón para conocer más */}
+        {/* BOTÓN */}
         <div className="w-full flex items-center justify-center mt-8">
           <Button
             onClick={() => navigate("/planes/internet")}
             size="lg"
-            className="relative overflow-hidden bg-gradient-to-r from-[#FF9900] to-[#EC5406] text-white font-bold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-110 group min-h-[44px]"
+            className="relative overflow-hidden bg-gradient-to-r from-[#00ae9d] via-[#1DAA61] to-[#00C853] text-white font-bold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-2xl hover:shadow-[#00C853]/70 transition-all duration-300 hover:scale-110 group min-h-[44px]"
             style={{
               animation: "pulse 2s ease-in-out infinite",
             }}
           >
             <span className="relative z-10">Conocer más</span>
 
-            {/* Efecto de brillo que pasa por el botón */}
+            {/* Shine effect */}
             <span
               className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent"
               style={{
@@ -184,13 +182,14 @@ export default function Planes() {
         </div>
       </div>
 
+      {/* ANIMACIONES */}
       <style>{`
         @keyframes pulse {
           0%, 100% {
-            box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.7);
+            box-shadow: 0 0 0 0 rgba(0, 174, 157, 0.7);
           }
           50% {
-            box-shadow: 0 0 0 10px rgba(255, 153, 0, 0);
+            box-shadow: 0 0 0 12px rgba(0, 174, 157, 0);
           }
         }
 

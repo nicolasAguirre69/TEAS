@@ -48,7 +48,7 @@ export default function Pse() {
         />
         <main className="mx-auto flex w-full max-w-4xl flex-col gap-10 px-4 py-12 sm:px-6 md:px-10 lg:px-0 overflow-x-hidden">
           <Card className="overflow-hidden border-black/10 bg-white shadow-lg shadow-black/5 p-0 w-full">
-            <div className="bg-gradient-to-b from-[#ff9900] to-[#ec5406] p-4 sm:p-6 text-white">
+            <div className="bg-gradient-to-b from-[#00ae9d] to-[#2d4258] p-4 sm:p-6 text-white">
               <h1 className="text-xl sm:text-2xl font-semibold break-words">
                 PSE - Pago en línea
               </h1>
@@ -78,7 +78,7 @@ export default function Pse() {
         <Dialog open={discountDialogOpen} onOpenChange={setDiscountDialogOpen}>
           <DialogContent className="max-w-[95vw] sm:max-w-2xl max-h-[80vh] overflow-y-auto overflow-x-hidden">
             <DialogHeader>
-              <DialogTitle className="text-xl sm:text-2xl font-bold text-orange-600 break-words">
+              <DialogTitle className="text-xl sm:text-2xl font-bold text-teal-600 break-words">
                 Detalles de Descuento
               </DialogTitle>
               <DialogDescription className="break-words">
@@ -151,18 +151,18 @@ export default function Pse() {
                       ).map((cupon, index) => (
                         <Card
                           key={cupon.id || index}
-                          className="py-2 border-orange-200 bg-orange-50/50 overflow-hidden"
+                          className="py-2 border-teal-200 bg-teal-50/50 overflow-hidden"
                         >
                           <CardContent className="p-4 space-y-3 overflow-x-hidden">
                             <div className="flex flex-col sm:flex-row items-start sm:items-start justify-between gap-4">
                               <div className="flex-1 space-y-3 min-w-0">
                                 {/* Tipo de descuento y porcentaje destacados */}
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-3 border-b border-orange-200">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-3 border-b border-teal-200">
                                   <div className="flex-1 min-w-0">
                                     <span className="text-xs font-medium text-gray-600 uppercase tracking-wide">
                                       Tipo de Descuento
                                     </span>
-                                    <p className="text-base sm:text-lg font-bold text-orange-700 mt-1 break-words">
+                                    <p className="text-base sm:text-lg font-bold text-teal-700 mt-1 break-words">
                                       {cupon.tipo_descuento_descripcion ||
                                         cupon.razon ||
                                         cupon.descripcion}
@@ -173,7 +173,7 @@ export default function Pse() {
                                       <span className="text-xs font-medium text-gray-600 uppercase tracking-wide block">
                                         Descuento
                                       </span>
-                                      <p className="text-xl sm:text-2xl font-bold text-orange-600 mt-1">
+                                      <p className="text-xl sm:text-2xl font-bold text-teal-600 mt-1">
                                         {cupon.valor_descuento}%
                                       </p>
                                     </div>
@@ -182,10 +182,10 @@ export default function Pse() {
 
                                 {/* Código del cupón */}
                                 <div className="flex flex-wrap items-center gap-2">
-                                  <span className="font-semibold text-orange-900 text-sm">
+                                  <span className="font-semibold text-teal-900 text-sm">
                                     Código:
                                   </span>
-                                  <span className="text-xs sm:text-sm font-mono bg-white px-2 sm:px-3 py-1 sm:py-1.5 rounded border border-orange-200 text-gray-800 break-all">
+                                  <span className="text-xs sm:text-sm font-mono bg-white px-2 sm:px-3 py-1 sm:py-1.5 rounded border border-teal-200 text-gray-800 break-all">
                                     {cupon.codigo}
                                   </span>
                                 </div>
@@ -201,13 +201,13 @@ export default function Pse() {
                                 </div>
 
                                 {/* Información adicional */}
-                                <div className="flex flex-col sm:flex-row flex-wrap gap-4 text-xs sm:text-sm pt-2 border-t border-orange-100">
+                                <div className="flex flex-col sm:flex-row flex-wrap gap-4 text-xs sm:text-sm pt-2 border-t border-teal-100">
                                   {cupon.valor_descuento && (
                                     <div className="min-w-0">
                                       <span className="font-medium text-gray-700 block text-xs uppercase tracking-wide mb-1">
                                         Valor del Descuento
                                       </span>
-                                      <span className="text-orange-600 font-semibold text-sm sm:text-base break-words">
+                                      <span className="text-teal-600 font-semibold text-sm sm:text-base break-words">
                                         {formatCurrency(
                                           (() => {
                                             const precioOriginal = (
@@ -250,8 +250,8 @@ export default function Pse() {
                     </div>
                   </div>
                 ) : (
-                  <div className="rounded-lg bg-yellow-50 border border-yellow-200 p-4 text-center">
-                    <p className="text-yellow-800 font-medium">
+                  <div className="rounded-lg bg-teal-50 border border-teal-200 p-4 text-center">
+                    <p className="text-teal-800 font-medium">
                       No hay descuentos aplicados a esta cuenta
                     </p>
                   </div>

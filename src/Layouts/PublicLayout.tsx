@@ -102,14 +102,14 @@ const PublicLayout = () => {
         <div className="w-full">
           <div className="flex flex-col gap-4 bg-black p-4 text-primary-foreground shadow-lg md:flex-row md:items-center md:justify-center">
             <p className="text-sm font-medium md:text-base text-center md:text-left">
-              <span className="font-bold text-[#FF9900]">
+              <span className="font-bold text-[#00ae9d]">
                 ¿En casa necesitas Internet Fibra?
               </span>{" "}
               ¡Déjanos tus datos y te llamaremos en breve!
             </p>
             <form
               onSubmit={handleLeadSubmit}
-              className="flex w-full md:w-1/2 lg:w-1/3 items-center overflow-hidden rounded-2xl bg-white shadow-inner focus-within:ring-2 focus-within:ring-[#EC5406]/60"
+              className="flex w-full md:w-1/2 lg:w-1/3 items-center overflow-hidden rounded-2xl bg-white shadow-inner focus-within:ring-2 focus-within:ring-[#00ae9d]/60"
             >
               <input
                 type="tel"
@@ -198,13 +198,13 @@ const PublicLayout = () => {
                 <Button
                   key={index}
                   onClick={() => handleWhatsAppClick(line.phone)}
-                  className="w-full text-white hover:from-green-500 hover:to-green-600 bg-gradient-to-r from-[#FF9900] to-[#EC5406] relative"
+                  className="w-full text-white hover:from-green-500 hover:to-green-600 bg-gradient-to-r from-[#00ae9d] to-[#2d4258] relative"
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   {line.title}
                   <Badge
                     variant="secondary"
-                    className="ml-2 bg-white text-[#EC5406] hover:bg-white"
+                    className="ml-2 bg-white text-[#2d4258] hover:bg-white"
                   >
                     {line.badge}
                   </Badge>

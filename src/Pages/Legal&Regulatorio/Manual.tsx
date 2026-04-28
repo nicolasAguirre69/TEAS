@@ -78,13 +78,13 @@ const secciones = [
     titulo: "4. Cobertura e interferencias WiFi",
     descripcion: "Considera la distancia y los obstáculos alrededor del módem.",
     items: coberturaWifi,
-    icono: <Wifi className="h-6 w-6 text-[#ff6400]" />,
+    icono: <Wifi className="h-6 w-6 text-[#00ae9d]" />,
   },
   {
     titulo: "5. Factores relacionados con INTTELGO",
     descripcion: "Procesos internos que influyen en la calidad del servicio.",
     items: factoresInttelgo,
-    icono: <ShieldCheck className="h-6 w-6 text-[#ff6400]" />,
+    icono: <ShieldCheck className="h-6 w-6 text-[#00ae9d]" />,
   },
   {
     titulo: "6. Factores externos",
@@ -94,7 +94,7 @@ const secciones = [
 ];
 
 const categorias = [
-  { label: "Cliente", color: "bg-[#fff4ec] text-[#ff6400]" },
+  { label: "Cliente", color: "bg-[#e6f7f5] text-[#00ae9d]" },
   { label: "INTTELGO S.A.S.", color: "bg-[#e5f5ff] text-[#005f9e]" },
   { label: "Factores externos", color: "bg-[#f0f1f5] text-black" },
 ];
@@ -147,7 +147,7 @@ export default function Manual() {
               <CardHeader className="space-y-2">
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <CardTitle className="text-2xl font-bold text-[#ff6400]">
+                    <CardTitle className="text-2xl font-bold text-[#00ae9d]">
                       {titulo}
                     </CardTitle>
                     <CardDescription className="text-sm text-muted-foreground">
@@ -155,7 +155,7 @@ export default function Manual() {
                     </CardDescription>
                   </div>
                   {icono && (
-                    <div className="rounded-full bg-[#fff4ec] p-3">{icono}</div>
+                    <div className="rounded-full bg-[#e6f7f5] p-3">{icono}</div>
                   )}
                 </div>
               </CardHeader>
@@ -171,10 +171,10 @@ export default function Manual() {
           ))}
         </div>
 
-        <Card className="border-[#ff6400]/40 bg-[#fff4ec] text-[#a13d00] shadow-lg shadow-black/5">
+        <Card className="border-[#00ae9d]/40 bg-[#e6f7f5] text-[#1f2d3a] shadow-lg shadow-black/5">
           <CardContent className="space-y-4 p-6">
             <div className="flex items-start gap-3">
-              <AlertCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#ff6400]" />
+              <AlertCircle className="mt-1 h-6 w-6 flex-shrink-0 text-[#00ae9d]" />
               <p className="text-sm sm:text-base">
                 Nota final: Las recomendaciones y factores descritos se basan en
                 la experiencia de INTTELGO S.A.S., considerando las incidencias
@@ -182,17 +182,17 @@ export default function Manual() {
                 técnico.
               </p>
             </div>
-            <Separator className="bg-[#ff6400]/40" />
+            <Separator className="bg-[#00ae9d]/40" />
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2 font-semibold uppercase tracking-wide">
-                <ShieldCheck className="h-5 w-5 text-[#ff6400]" />
+                <ShieldCheck className="h-5 w-5 text-[#00ae9d]" />
                 Régimen de la protección de los usuarios
               </div>
               <a
                 href="https://www.mintic.gov.co/portal/inicio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-fit items-center gap-2 rounded-full bg-[#ff6400] px-4 py-2 text-sm font-semibold text-white shadow hover:bg-[#e05a00]"
+                className="inline-flex w-fit items-center gap-2 rounded-full bg-[#00ae9d] px-4 py-2 text-sm font-semibold text-white shadow hover:bg-[#2d4258]"
               >
                 Resolución 511 de 2017
                 <ExternalLink className="h-4 w-4" />

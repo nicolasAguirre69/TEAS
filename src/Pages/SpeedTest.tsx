@@ -138,7 +138,7 @@ export default function SpeedTest() {
         {/* Header Section */}
         <div className="max-w-7xl mx-auto mb-8 md:mb-12 text-center space-y-4">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Gauge className="h-8 w-8 md:h-10 md:w-10 text-orange-500" />
+            <Gauge className="h-8 w-8 md:h-10 md:w-10 text-teal-500" />
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
               Prueba de Velocidad
             </h1>
@@ -150,23 +150,23 @@ export default function SpeedTest() {
         </div>
         {/* Info Section */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl p-6 md:p-8 border border-orange-200">
+          <div className="bg-gradient-to-r from-teal-50 to-teal-100 rounded-xl p-6 md:p-8 border border-teal-200">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-4">
               ¿Cómo funciona?
             </h2>
             <ul className="space-y-2 text-gray-700 text-sm md:text-base">
               <li className="flex items-start gap-2">
-                <span className="text-orange-500 font-bold">•</span>
+                <span className="text-teal-500 font-bold">•</span>
                 <span>
                   Haz clic en "Iniciar prueba" para comenzar la medición
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-orange-500 font-bold">•</span>
+                <span className="text-teal-500 font-bold">•</span>
                 <span>La prueba medirá tu velocidad de descarga y subida</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-orange-500 font-bold">•</span>
+                <span className="text-teal-500 font-bold">•</span>
                 <span>Los resultados se mostrarán al finalizar la prueba</span>
               </li>
             </ul>
@@ -207,7 +207,7 @@ export default function SpeedTest() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
               {/* Ubicación */}
               <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                <MapPin className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-teal-500 flex-shrink-0" />
                 <div className="min-w-0 flex-1">
                   <p className="text-xs text-gray-500 mb-1">Ubicación</p>
                   {location === "No solicitada" ? (
@@ -262,7 +262,7 @@ export default function SpeedTest() {
 
               {/* Hora */}
               <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                <Clock className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-teal-500 flex-shrink-0" />
                 <div className="min-w-0">
                   <p className="text-xs text-gray-500 mb-1">Hora actual</p>
                   <p className="text-sm font-semibold text-gray-900">
@@ -273,7 +273,7 @@ export default function SpeedTest() {
 
               {/* Dispositivo */}
               <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                <Smartphone className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                <Smartphone className="h-5 w-5 text-teal-500 flex-shrink-0" />
                 <div className="min-w-0">
                   <p className="text-xs text-gray-500 mb-1">Dispositivo</p>
                   <p className="text-sm font-semibold text-gray-900 truncate">

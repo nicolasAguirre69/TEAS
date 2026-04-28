@@ -60,7 +60,7 @@ const preguntas = [
         <ul className="space-y-2 text-base font-semibold text-black">
           {normativaLinks.map((link) => (
             <li key={link.label} className="flex items-center gap-2">
-              <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+              <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
               {externalLink(link.label, link.href)}
             </li>
           ))}
@@ -170,7 +170,7 @@ export default function DignidadInfantil() {
             </CardDescription>
             <Button
               variant="link"
-              className="gap-1 text-lg font-semibold text-[#ff6400] hover:text-[#d95300]"
+              className="gap-1 text-lg font-semibold text-[#00ae9d] hover:text-[#2d4258]"
               asChild
             >
               {externalLink(
@@ -183,10 +183,10 @@ export default function DignidadInfantil() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader>
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Dignidad infantil
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Dignidad infantil
             </CardTitle>
           </CardHeader>
@@ -207,10 +207,10 @@ export default function DignidadInfantil() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-4">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Normativa
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Normativa
             </CardTitle>
           </CardHeader>
@@ -248,10 +248,10 @@ export default function DignidadInfantil() {
             className="border-black/10 shadow-lg shadow-black/5"
           >
             <CardHeader>
-              <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+              <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
                 Dignidad infantil
               </Badge>
-              <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+              <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
                 {pregunta.title}
               </CardTitle>
             </CardHeader>
@@ -263,10 +263,10 @@ export default function DignidadInfantil() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader>
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Internet sano en casa
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Internet sano en casa
             </CardTitle>
           </CardHeader>
@@ -292,7 +292,7 @@ export default function DignidadInfantil() {
             <ul className="space-y-2 text-base font-semibold text-black">
               {programasFiltrado.map((programa) => (
                 <li key={programa} className="flex items-center gap-2">
-                  <ArrowRight className="h-4 w-4 text-[#ff6400]" />
+                  <ArrowRight className="h-4 w-4 text-[#00ae9d]" />
                   {programa}
                 </li>
               ))}
@@ -302,10 +302,10 @@ export default function DignidadInfantil() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader>
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Dignidad infantil
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               ¿Dónde denunciar las páginas que tengan contenido infantil
               pornográfico?
             </CardTitle>
@@ -322,7 +322,7 @@ export default function DignidadInfantil() {
                       key={`item-punto-denuncia-${index}`}
                       className="flex items-center gap-2"
                     >
-                      <ArrowRight className="h-4 w-4 text-[#ff6400]" />
+                      <ArrowRight className="h-4 w-4 text-[#00ae9d]" />
                       {item}
                     </li>
                   ))}
@@ -349,7 +349,7 @@ export default function DignidadInfantil() {
                           key={`item-sitio-otros-denuncia-${index}`}
                           className="flex items-center gap-2"
                         >
-                          <ArrowRight className="h-4 w-4 text-[#ff6400]" />
+                          <ArrowRight className="h-4 w-4 text-[#00ae9d]" />
                           {item}
                         </li>
                       ))}

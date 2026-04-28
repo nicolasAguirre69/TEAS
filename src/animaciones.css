@@ -12,10 +12,10 @@
 @keyframes orangePulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(0, 174, 157, 0.7);
   }
   50% {
-    box-shadow: 0 0 0 15px rgba(255, 153, 0, 0);
+    box-shadow: 0 0 0 15px rgba(0, 174, 157, 0);
   }
 }
 

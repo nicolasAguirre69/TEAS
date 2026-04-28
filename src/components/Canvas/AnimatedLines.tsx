@@ -51,7 +51,7 @@ export default function AnimatedLines({
       {Array.from({ length: lineCount }).map((_, index) => (
         <div
           key={index}
-          className="w-8 h-10 transition-opacity duration-300 bg-gradient-to-r from-[#FF9900] to-[#EC5406]"
+          className="w-8 h-10 transition-opacity duration-300 bg-gradient-to-r from-[#00ae9d] to-[#2d4258]"
           style={{
             transform: "skewX(-20deg)",
             opacity: index < visibleLines ? 1 : 0,

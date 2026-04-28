@@ -112,7 +112,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-        <div className="h-12 w-12 border-4 border-orange-500 border-t-transparent rounded-full animate-spin" />
+        <div className="h-12 w-12 border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
@@ -173,7 +173,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
         </div>
 
         {/* Información del cliente */}
-        <Card className="border border-orange-200 rounded-lg p-6">
+        <Card className="border border-teal-200 rounded-lg p-6">
           <CardTitle className="font-semibold text-lg mb-4">Información del Cliente</CardTitle>
           <CardContent className="grid p-0 md:px-3 pb-6 gap-2 sm:grid-cols-2 w-full max-w-full overflow-hidden">
             <FormField
@@ -182,7 +182,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
               render={({ field }) => (
                 <FormItem className="space-y-3">
                   <FormLabel className="flex items-center gap-2 text-base font-semibold text-black">
-                    <User className="h-4 w-4 text-[#ff6400]" />
+                    <User className="h-4 w-4 text-[#00ae9d]" />
                     Tipo de usuario *
                   </FormLabel>
                   <Select
@@ -216,7 +216,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
               render={({ field }) => (
                 <FormItem className="space-y-3">
                   <FormLabel className="flex items-center gap-2 text-base font-semibold text-black">
-                    <CreditCard className="h-4 w-4 text-[#ff6400]" />
+                    <CreditCard className="h-4 w-4 text-[#00ae9d]" />
                     Tipo de Identificación *
                   </FormLabel>
                   <Select
@@ -315,14 +315,14 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
         </Card>
 
         {/* Selector de banco */}
-        <Card className="border border-orange-200 rounded-lg p-6">
+        <Card className="border border-teal-200 rounded-lg p-6">
           <FormField
             control={form.control}
             name="financialInstitutionCode"
             render={({ field }) => (
               <FormItem className="space-y-3">
                 <FormLabel className="flex items-center gap-2 text-lg font-medium">
-                  <CreditCard className="h-4 w-4 text-[#ff6400]" />
+                  <CreditCard className="h-4 w-4 text-[#00ae9d]" />
                   Seleccione su banco *
                 </FormLabel>
                 <Select
@@ -387,7 +387,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
                   type="checkbox"
                   checked={field.value}
                   onChange={field.onChange}
-                  className="mt-1 h-4 w-4 rounded border-gray-300 text-orange-500 focus:ring-orange-500"
+                  className="mt-1 h-4 w-4 rounded border-gray-300 text-teal-500 focus:ring-teal-500"
                 />
               </FormControl>
               <FormLabel className="text-sm font-medium text-gray-700 !mt-0">
@@ -410,7 +410,7 @@ function PreConfiguredPayment({ paymentId }: { paymentId: string }) {
           variant="orange"
           type="submit"
           disabled={submitting}
-          className="w-full h-12 rounded-lg hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+          className="w-full h-12 rounded-lg hover:bg-teal-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
           {submitting ? (
             <>

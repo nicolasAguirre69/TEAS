@@ -105,73 +105,73 @@ export default function Telefonia() {
       <Suspense fallback={<LoadingSpinner fullScreen size="xl" />}>
         <BannerPlanes
           image="telefonia/triple-play-banner.webp"
-          className="bg-gradient-to-b from-orange-400 via-orange-600 to-[#903B67]"
+          className="bg-gradient-to-b from-teal-400 via-teal-600 to-[#903B67]"
           imageFullWidthFromMd
         >
           {/* Contenido solo para móvil; en pantallas más grandes se muestra solo el banner de imagen */}
           <section className="flex flex-col items-center justify-center text-center sm:hidden">
-            <h2 className="max-w-3xl sm:max-w-4xl text-5xl sm:text-5xl lg:text-6xl xl:text-7xl text-orange-50 font-extrabold leading-tight tracking-wide drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
+            <h2 className="max-w-3xl sm:max-w-4xl text-5xl sm:text-5xl lg:text-6xl xl:text-7xl text-teal-50 font-extrabold leading-tight tracking-wide drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
               <span className="block">
                 Todo lo que{" "}
-                <span className="bg-gradient-to-r from-orange-100 via-amber-200 to-orange-300 bg-clip-text text-transparent hover:from-orange-300 hover:via-orange-100 hover:to-amber-200 transition-all duration-300">
+                <span className="bg-gradient-to-r from-teal-100 via-teal-200 to-teal-300 bg-clip-text text-transparent hover:from-teal-300 hover:via-teal-100 hover:to-teal-200 transition-all duration-300">
                   necesitas
                 </span>
               </span>
               <span className="block mt-1">
                 en un solo{" "}
-                <span className="bg-gradient-to-r from-orange-100 via-white to-orange-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-teal-100 via-white to-teal-200 bg-clip-text text-transparent">
                   plan
                 </span>{" "}
                 para tu{" "}
-                <span className="bg-gradient-to-r from-orange-100 via-amber-100 to-orange-200 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-teal-100 via-teal-100 to-teal-200 bg-clip-text text-transparent">
                   hogar.
                 </span>
               </span>
             </h2>
 
-            <p className="max-w-2xl text-base sm:text-lg md:text-xl text-orange-100/90 mt-4 sm:mt-6 font-medium leading-relaxed">
+            <p className="max-w-2xl text-base sm:text-lg md:text-xl text-teal-100/90 mt-4 sm:mt-6 font-medium leading-relaxed">
               Internet ultra rápido + Televisión de alta definición + Telefonía ilimitada
             </p>
 
             {/* Feature Cards - Triple Play */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-full max-w-4xl">
-              <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
+              <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
                 <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                     <Wifi className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-orange-50">
+                  <h3 className="text-xl font-bold text-teal-50">
                     Internet Fibra Óptica
                   </h3>
-                  <p className="text-sm text-orange-100/80">
+                  <p className="text-sm text-teal-100/80">
                     Velocidad simétrica de hasta 1 Gbps para toda tu familia
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
+              <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
                 <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                     <Tv className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-orange-50">
+                  <h3 className="text-xl font-bold text-teal-50">
                     Televisión HD
                   </h3>
-                  <p className="text-sm text-orange-100/80">
+                  <p className="text-sm text-teal-100/80">
                     Más de 100 canales en alta definición con señal digital
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1">
+              <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1">
                 <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                  <div className="h-14 w-14 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                     <Phone className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-orange-50">
+                  <h3 className="text-xl font-bold text-teal-50">
                     Telefonía Ilimitada
                   </h3>
-                  <p className="text-sm text-orange-100/80">
+                  <p className="text-sm text-teal-100/80">
                     Llamadas sin límite a nivel nacional e internacional
                   </p>
                 </CardContent>
@@ -211,7 +211,7 @@ export default function Telefonia() {
           <div className="space-y-6 px-4 md:px-0">
             <div className="space-y-4">
               <div className="inline-block">
-                <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-orange-500/30 mb-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-teal-500/30 mb-4">
                   Triple play para tu hogar
                 </span>
               </div>
@@ -220,10 +220,10 @@ export default function Telefonia() {
                   INTERNET + TELEVISIÓN + TELEFONÍA EN UN SOLO PLAN
                 </span>
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full" />
+              <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full" />
               <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
                 Conecta tu hogar con un plan triple play que combina{" "}
-                <span className="font-semibold text-orange-600">
+                <span className="font-semibold text-teal-600">
                   internet de alta velocidad, televisión HD y telefonía ilimitada
                 </span>{" "}
                 para que tu familia navegue, vea y hable sin preocupaciones.
@@ -232,7 +232,7 @@ export default function Telefonia() {
 
             <div className="pt-6 space-y-5">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/30">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30">
                   <Check className="h-5 w-5 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -247,7 +247,7 @@ export default function Telefonia() {
                       key={index}
                       className="flex items-start gap-4 group hover:translate-x-1 transition-transform duration-300"
                     >
-                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md shadow-orange-500/30 group-hover:shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-110">
+                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md shadow-teal-500/30 group-hover:shadow-lg group-hover:shadow-teal-500/50 transition-all duration-300 group-hover:scale-110">
                         <Check className="h-4 w-4 text-white" />
                       </div>
                       <span className="text-gray-800 text-base md:text-lg font-medium leading-relaxed pt-0.5 group-hover:text-gray-900 transition-colors">

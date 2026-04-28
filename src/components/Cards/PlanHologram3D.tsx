@@ -184,11 +184,11 @@ export const CardBody = ({ children, className, reduceEffects = false, variant =
         : '0 0 60px rgba(147, 51, 234, 0.9), 0 0 120px rgba(124, 58, 237, 0.6), inset 0 0 60px rgba(139, 92, 246, 0.3)'
     const primaryBackground = '' // azul noche a morado
 
-    // Colores para variante secondary (naranja)
-    const secondaryBorder = '2px solid rgba(255, 152, 0, 0.3)'
+    // Colores para variante secondary (teal/navy de la marca)
+    const secondaryBorder = '2px solid rgba(0, 174, 157, 0.3)'
     const secondaryGlow = reduceEffects
-        ? '0 0 30px rgba(255, 152, 0, 0.6)'
-        : '0 0 60px rgba(255, 152, 0, 0.8), 0 0 120px rgba(255, 152, 0, 0.4), inset 0 0 60px rgba(255, 255, 255, 0.2)'
+        ? '0 0 30px rgba(0, 174, 157, 0.6)'
+        : '0 0 60px rgba(0, 174, 157, 0.8), 0 0 120px rgba(45, 66, 88, 0.4), inset 0 0 60px rgba(255, 255, 255, 0.2)'
 
     return (
         <>
@@ -391,8 +391,8 @@ export const SecondaryPlanHologram3D = memo(({ plan }: PlanProps) => {
                             reduceEffects={reduceEffects}
                         >
                             <CardItem translateZ={100} className="mt-4 w-full -translate-y-10 ">
-                                <Card className="absolute -top-15 left-1/2 -translate-x-1/2 z-10 w-3xs h-3xs flex items-center justify-center rounded-xl bg-primary ">
-                                    <CardContent className="text-primary-foreground flex flex-col items-center justify-center w-full h-full">
+                                <Card className="absolute -top-15 left-1/2 -translate-x-1/2 z-10 w-3xs h-3xs flex items-center justify-center rounded-xl bg-gradient-to-br from-[#00ae9d] to-[#2d4258] border-none">
+                                    <CardContent className="text-white flex flex-col items-center justify-center w-full h-full">
                                         <span className="text-7xl font-bold leading-none">{plan.speed}</span>
                                         <span className="text-4xl font-semibold -mt-2">Mbps</span>
                                     </CardContent>
@@ -401,7 +401,7 @@ export const SecondaryPlanHologram3D = memo(({ plan }: PlanProps) => {
                             {plan.extras.map((extra, index) => (
                                 <CardItem key={`extra-${index}`} translateZ={110} className="mt-4 w-full -translate-y-10">
                                     <Card
-                                        className="bg-gradient-to-r from-[#ff9900] to-[#ec5406] absolute -left-1/16 -translate-x-1/2 z-12 p-3 border-none"
+                                        className="bg-gradient-to-r from-[#00ae9d] to-[#2d4258] absolute -left-1/16 -translate-x-1/2 z-12 p-3 border-none"
                                         style={{
                                             top: `${1 + index * 4.5}rem`,
                                         }}
@@ -436,7 +436,7 @@ export const SecondaryPlanHologram3D = memo(({ plan }: PlanProps) => {
                             <CardItem translateZ={40} className="w-full">
                                 <Button
                                     onClick={handleShowMore}
-                                    className="w-full py-6 flex rounded-xl text-lg"
+                                    className="w-full py-6 flex rounded-xl text-lg bg-gradient-to-r from-[#00ae9d] to-[#2d4258] text-white hover:from-[#2d4258] hover:to-[#00ae9d] border-none"
                                 >
                                     <span className="font-semibold">Ver más</span>
                                 </Button>
@@ -567,13 +567,13 @@ export const PrimaryPlanHologram3D = memo(({ plan }: PlanProps) => {
                 <div className={cn("backface-hidden", isFlipped && "invisible")}>
                     <CardContainer containerClassName="py-0">
                         <CardBody
-                            className="relative flex flex-col justify-center h-auto p-6 shadow-xl bg-primary"
+                            className="relative flex flex-col justify-center h-auto p-6 shadow-xl bg-gradient-to-b from-[#1a0033] to-[#2d0050]"
                             reduceEffects={reduceEffects}
                             variant="primary"
                         >
                             <CardItem translateZ={50} className="mt-4 w-full -translate-y-10">
-                                <Card className="absolute -top-15 left-1/2 -translate-x-1/2 z-10 w-3xs h-3xs flex items-center justify-center rounded-xl bg-primary">
-                                    <CardContent className="text-primary-foreground flex flex-col items-center justify-center w-full h-full">
+                                <Card className="absolute -top-15 left-1/2 -translate-x-1/2 z-10 w-3xs h-3xs flex items-center justify-center rounded-xl bg-gradient-to-b from-[#320061] to-[#9c15c5] border-none">
+                                    <CardContent className="text-white flex flex-col items-center justify-center w-full h-full">
                                         <span className="text-7xl font-bold leading-none text-center">{plan.title}</span>
                                     </CardContent>
                                 </Card>
@@ -633,15 +633,15 @@ export const PrimaryPlanHologram3D = memo(({ plan }: PlanProps) => {
                 >
                     <CardContainer containerClassName="py-0">
                         <CardBody
-                            className="relative flex flex-col justify-center h-auto rounded-xl border p-6 shadow-xl bg-primary"
+                            className="relative flex flex-col justify-center h-auto rounded-xl border p-6 shadow-xl bg-gradient-to-b from-[#1a0033] to-[#2d0050]"
                             reduceEffects={reduceEffects}
                             variant="primary"
                         >
-                            <CardItem translateZ={70} className="w-full mb-4 text-primary-foreground">
+                            <CardItem translateZ={70} className="w-full mb-4 text-white">
                                 <h3 className="text-2xl font-bold text-center mb-2">{plan.title}</h3>
                             </CardItem>
 
-                            <CardItem translateZ={60} className="w-full text-primary-foreground">
+                            <CardItem translateZ={60} className="w-full text-white">
                                 {plan.caracteristicas.map((caracteristica: string, index: number) => (
                                     <div key={`caracteristica-${index}`} className="flex items-start gap-3 w-full">
                                         <div className="w-6 h-6 flex items-center justify-center ">

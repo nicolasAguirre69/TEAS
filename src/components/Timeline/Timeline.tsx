@@ -49,7 +49,7 @@ export default function Timeline({ events, className = "" }: TimelineProps) {
     <div className={cn("relative py-12 md:py-20", className)}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
         {/* Línea vertical */}
-        <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-orange-400 to-orange-300 transform md:-translate-x-1/2" />
+        <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-teal-500 via-teal-400 to-teal-300 transform md:-translate-x-1/2" />
 
         <div className="space-y-12 md:space-y-20">
           {events.map((event, index) => {
@@ -84,7 +84,7 @@ export default function Timeline({ events, className = "" }: TimelineProps) {
                     )}
                   >
                     <div className="inline-block max-w-md">
-                      <h3 className="text-4xl md:text-5xl font-bold text-orange-600 mb-4">
+                      <h3 className="text-4xl md:text-5xl font-bold text-teal-600 mb-4">
                         {event.year}
                       </h3>
                       <h4 className="text-xl md:text-2xl font-semibold text-secondary-foreground mb-3">
@@ -99,7 +99,7 @@ export default function Timeline({ events, className = "" }: TimelineProps) {
                   {/* Círculo central */}
                   <div
                     className={cn(
-                      "absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-orange-500 border-4 border-white shadow-lg transition-all duration-500 delay-100",
+                      "absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-teal-500 border-4 border-white shadow-lg transition-all duration-500 delay-100",
                       isVisible ? "scale-100" : "scale-0"
                     )}
                   />
@@ -113,14 +113,14 @@ export default function Timeline({ events, className = "" }: TimelineProps) {
                   {/* Círculo lateral */}
                   <div
                     className={cn(
-                      "absolute left-8 transform -translate-x-1/2 w-5 h-5 rounded-full bg-orange-500 border-4 border-white shadow-lg transition-all duration-500 delay-100",
+                      "absolute left-8 transform -translate-x-1/2 w-5 h-5 rounded-full bg-teal-500 border-4 border-white shadow-lg transition-all duration-500 delay-100",
                       isVisible ? "scale-100" : "scale-0"
                     )}
                   />
 
                   {/* Contenido */}
                   <div className="flex-1">
-                    <h3 className="text-3xl font-bold text-orange-600 mb-3">
+                    <h3 className="text-3xl font-bold text-teal-600 mb-3">
                       {event.year}
                     </h3>
                     <h4 className="text-lg font-semibold text-secondary-foreground mb-2">

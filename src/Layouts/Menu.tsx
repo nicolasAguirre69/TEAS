@@ -76,12 +76,6 @@ const menuData: Record<string, MenuSection> = {
         description:
           "Planes de televisión digital con excelente calidad de imagen y señal estable para tu hogar o negocio.",
       },
-      {
-        title: "Telefonía",
-        href: "/planes/telefonia",
-        description:
-          "Planes de telefonía confiables con comunicación clara y cobertura estable para hogares y negocios.",
-      },
     ],
   },
   docs: {
@@ -98,12 +92,7 @@ const menuData: Record<string, MenuSection> = {
     title: "Contacto",
     type: "link",
     href: "/contacto",
-  },
-  withIcon: {
-    title: "BECA 2026",
-    type: "link",
-    href: "/beca",
-  },
+  }
 };
 
 export default function Menu({
@@ -195,7 +184,7 @@ export default function Menu({
                               navigationMenuTriggerStyle(),
                               "bg-transparent text-sm font-medium hover:bg-gradient-to-b hover:from-transparent hover:to-white/60",
                               isActiveRoute(section.href)
-                                ? "text-orange-500 font-semibold"
+                                ? "text-teal-500 font-semibold"
                                 : textColor
                             )}
                           >
@@ -313,7 +302,7 @@ export default function Menu({
             <SheetContent
               side="right"
               className={cn(
-                "overflow-y-auto bg-gradient-to-b from-orange-50 to-orange-100 border-l-2 border-orange-200",
+                "overflow-y-auto bg-gradient-to-b from-teal-50 to-teal-100 border-l-2 border-teal-200",
                 isMobile ? "w-[300px]" : "w-[380px] sm:w-[420px]"
               )}
             >
@@ -330,11 +319,11 @@ export default function Menu({
                         to={section.href || "#"}
                         onClick={() => setOpen(false)}
                         className={cn(
-                          "flex items-center py-4 px-4 font-semibold hover:bg-orange-200 hover:text-orange-800 rounded-lg transition-all duration-300 border group",
+                          "flex items-center py-4 px-4 font-semibold hover:bg-teal-200 hover:text-teal-800 rounded-lg transition-all duration-300 border group",
                           isMobile ? "text-base" : "text-lg",
                           isActiveRoute(section.href)
-                            ? "bg-orange-200 text-orange-800 border-orange-300 shadow-md"
-                            : "border-transparent hover:border-orange-300 hover:shadow-md"
+                            ? "bg-teal-200 text-teal-800 border-teal-300 shadow-md"
+                            : "border-transparent hover:border-teal-300 hover:shadow-md"
                         )}
                       >
                         <div className="flex items-center gap-3">
@@ -342,8 +331,8 @@ export default function Menu({
                             className={cn(
                               "w-2 h-2 rounded-full transition-colors",
                               isActiveRoute(section.href)
-                                ? "bg-orange-700 w-3 h-3"
-                                : "bg-orange-500 group-hover:bg-orange-600"
+                                ? "bg-teal-700 w-3 h-3"
+                                : "bg-teal-500 group-hover:bg-teal-600"
                             )}
                           ></div>
                           <span>{section.title}</span>
@@ -353,16 +342,16 @@ export default function Menu({
                       <AccordionItem
                         key={key}
                         value={key}
-                        className="border border-orange-200 rounded-lg bg-white/50 backdrop-blur-sm"
+                        className="border border-teal-200 rounded-lg bg-white/50 backdrop-blur-sm"
                       >
                         <AccordionTrigger
                           className={cn(
-                            "font-semibold py-4 px-4 hover:no-underline hover:bg-orange-100 rounded-lg transition-all duration-300",
+                            "font-semibold py-4 px-4 hover:no-underline hover:bg-teal-100 rounded-lg transition-all duration-300",
                             isMobile ? "text-base" : "text-lg"
                           )}
                         >
                           <div className="flex items-center gap-3">
-                            <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                            <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
                             <span>{section.title}</span>
                           </div>
                         </AccordionTrigger>
@@ -375,15 +364,15 @@ export default function Menu({
                                   to={item.href || "#"}
                                   onClick={() => setOpen(false)}
                                   className={cn(
-                                    "flex flex-col gap-2 py-3 px-4 hover:bg-orange-100 hover:text-orange-800 rounded-lg transition-all duration-300 border group",
+                                    "flex flex-col gap-2 py-3 px-4 hover:bg-teal-100 hover:text-teal-800 rounded-lg transition-all duration-300 border group",
                                     isActiveRoute(item.href)
-                                      ? "bg-orange-100 text-orange-800 border-orange-200 font-semibold"
-                                      : "border-transparent hover:border-orange-200"
+                                      ? "bg-teal-100 text-teal-800 border-teal-200 font-semibold"
+                                      : "border-transparent hover:border-teal-200"
                                   )}
                                 >
                                   <div className="flex items-center gap-3">
                                     {item.icon && (
-                                      <div className="text-orange-600 group-hover:text-orange-700">
+                                      <div className="text-teal-600 group-hover:text-teal-700">
                                         <IconRenderer iconName={item.icon} />
                                       </div>
                                     )}
@@ -399,7 +388,7 @@ export default function Menu({
                                   {item.description && (
                                     <span
                                       className={cn(
-                                        "text-orange-600 group-hover:text-orange-700",
+                                        "text-teal-600 group-hover:text-teal-700",
                                         "text-sm"
                                       )}
                                     >
@@ -418,7 +407,7 @@ export default function Menu({
 
                 {/* Enlace PSE en el menú móvil */}
                 <div className="flex justify-center w-full">
-                  <Button className="w-[90%] backdrop-blur-md  bg-orange-500 hover:bg-orange-900 ">
+                  <Button className="w-[90%] backdrop-blur-md  bg-teal-500 hover:bg-teal-900 ">
                     <Link to="/pse" onClick={() => setOpen(false)}>
                       <div className="flex items-center gap-3">
                         <span>Pagar con PSE</span>
@@ -428,8 +417,8 @@ export default function Menu({
                 </div>
 
                 {/* Footer del menú */}
-                <div className="pt-4 border-t border-orange-200 text-center">
-                  <div className="text-xs text-orange-500">
+                <div className="pt-4 border-t border-teal-200 text-center">
+                  <div className="text-xs text-teal-500">
                     © {new Date().getFullYear()} Inttelgo - Todos los derechos
                     reservados
                   </div>

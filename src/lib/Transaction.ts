@@ -74,13 +74,13 @@ export const VISUAL_CONFIG: Record<
     pending: {
         icon: Clock3,
         title: "Pendiente",
-        headerClass: "from-amber-500 to-amber-600",
-        statusColor: "text-amber-600",
-        badgeClass: "bg-amber-100 text-amber-800 border-amber-200",
-        cardClass: "border-amber-200 bg-amber-50/50",
+        headerClass: "from-teal-500 to-teal-600",
+        statusColor: "text-teal-600",
+        badgeClass: "bg-teal-100 text-teal-800 border-teal-200",
+        cardClass: "border-teal-200 bg-teal-50/50",
         primaryActionLabel: "Verificar estado",
         secondaryActionLabel: "Volver al inicio",
-        alertClass: "border-amber-200 bg-amber-50",
+        alertClass: "border-teal-200 bg-teal-50",
     },
     rejected: {
         icon: XCircle,

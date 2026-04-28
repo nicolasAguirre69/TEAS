@@ -117,7 +117,7 @@ const carouselData = [
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
               con nuestro{" "}
               <span className="relative inline-block">
-                <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
                   plan gamer
                 </span>
               </span>
@@ -183,19 +183,19 @@ const carouselData = [
             <div className="lg:col-span-4 flex justify-center">
               <div className="relative">
                 {/* Efectos de órbita */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-orange-400/30 animate-ping" style={{ animationDuration: "3s" }}></div>
+                <div className="absolute inset-0 rounded-2xl border-2 border-teal-400/30 animate-ping" style={{ animationDuration: "3s" }}></div>
                 <div className="absolute inset-4 rounded-2xl border-2 border-purple-400/30 animate-ping" style={{ animationDuration: "4s", animationDelay: "0.5s" }}></div>
 
-                <Card className="relative z-10 w-[280px] md:w-[320px] backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/5 border-2 border-white/30 shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 hover:scale-130">
+                <Card className="relative z-10 w-[280px] md:w-[320px] backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/5 border-2 border-white/30 shadow-2xl hover:shadow-teal-500/50 transition-all duration-500 hover:scale-130">
                   <CardHeader className="pb-4">
                     <div className="flex justify-center items-center gap-2 mb-2">
-                      <Badge variant="secondary" className="bg-orange-500/20 text-orange-300 border-orange-400/50">
+                      <Badge variant="secondary" className="bg-teal-500/20 text-teal-300 border-teal-400/50">
                         PLAN GAMER
                       </Badge>
                     </div>
                     <CardTitle className="text-center">
                       <div className="text-8xl md:text-9xl font-black">
-                        <span className="bg-gradient-to-b from-orange-300 via-orange-400 to-orange-600 bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(251,146,60,0.8)]">
+                        <span className="bg-gradient-to-b from-teal-300 via-teal-400 to-teal-600 bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(0,174,157,0.8)]">
                           500
                         </span>
                       </div>
@@ -208,7 +208,7 @@ const carouselData = [
                     <h3 className="text-3xl md:text-4xl font-bold text-white uppercase text-center leading-tight tracking-wide">
                       Megas
                       <br />
-                      <span className="bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent">
+                      <span className="bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
                         Simétricas
                       </span>
                     </h3>
@@ -216,11 +216,11 @@ const carouselData = [
 
                   <CardFooter className="flex justify-center pt-2">
                     <div className="flex gap-1">
-                      <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
-                      <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
-                      <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
-                      <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
-                      <Star className="w-4 h-4 text-orange-400 fill-orange-400" />
+                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
+                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
+                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
+                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
+                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
                     </div>
                   </CardFooter>
 
@@ -231,11 +231,11 @@ const carouselData = [
 
             {/* Columna derecha - Precio y CTA */}
             <div className="lg:col-span-4 space-y-6">
-              <Card className="group relative backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/5 border-2 border-orange-400/30 shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-120 overflow-visible">
+              <Card className="group relative backdrop-blur-xl bg-gradient-to-br from-white/20 to-white/5 border-2 border-teal-400/30 shadow-2xl hover:shadow-teal-500/50 transition-all duration-300 hover:scale-120 overflow-visible">
                 {/* Ribbon de oferta especial en la esquina */}
                 <div className="absolute -top-2 -left-2 z-20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:-translate-x-1">
                   <div className="relative">
-                    <div className="relative bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500 text-white px-4 py-2 rounded-lg shadow-xl">
+                    <div className="relative bg-gradient-to-br from-[#00ae9d] via-[#00ae9d] to-[#2d4258] text-white px-4 py-2 rounded-lg shadow-xl">
                       <div className="flex items-center gap-2">
                         <Zap className="w-4 h-4 text-white fill-white" />
                         <span className="font-bold text-sm uppercase tracking-wide">
@@ -248,7 +248,7 @@ const carouselData = [
                 <div className="absolute top-9 -left-2 z-20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:-translate-x-1">
                   <div className="relative">
                     {/* Badge principal */}
-                    <div className="relative bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500 text-white px-4 py-2 rounded-lg shadow-xl">
+                    <div className="relative bg-gradient-to-br from-[#00ae9d] via-[#00ae9d] to-[#2d4258] text-white px-4 py-2 rounded-lg shadow-xl">
                       <div className="flex items-center gap-2">
 
                         <Star className="w-4 h-4 text-white fill-white" />
@@ -268,9 +268,9 @@ const carouselData = [
                     </CardTitle>
                   </CardHeader>
                   <div className="flex items-start gap-2">
-                    <DollarSign className="w-10 h-10 text-orange-400 drop-shadow-lg mt-1" />
+                    <DollarSign className="w-10 h-10 text-teal-400 drop-shadow-lg mt-1" />
                     <div className="flex flex-col">
-                      <span className="text-5xl md:text-6xl font-black bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent">
+                      <span className="text-5xl md:text-6xl font-black bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
                         100.000
                       </span>
                       <span className="text-lg text-white/80 font-semibold">
@@ -283,7 +283,7 @@ const carouselData = [
                 <CardFooter className="flex flex-col gap-3">
                   <Button
                     size="lg"
-                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-lg shadow-lg hover:shadow-orange-500/50 transition-all duration-300 hover:scale-105"
+                    className="w-full bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-bold text-lg shadow-lg hover:shadow-teal-500/50 transition-all duration-300 hover:scale-105"
                     asChild
                   >
                     <Link to="/planes/internet">
@@ -515,8 +515,8 @@ function PrincipalInfo() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 top-1/2 text-orange-400 size-12" />
-          <CarouselNext className="right-4 top-1/2 text-orange-400 size-12" />
+          <CarouselPrevious className="left-4 top-1/2 text-teal-400 size-12" />
+          <CarouselNext className="right-4 top-1/2 text-teal-400 size-12" />
           {/* Indicadores de slide */}
           <div
             className="flex justify-center gap-2 pb-4"
@@ -526,7 +526,7 @@ function PrincipalInfo() {
             {carouselData.map((_, index) => (
               <button
                 key={index}
-                className={`h-2 rounded-full transition-all ${current === index ? "w-8 bg-orange-400" : "w-2 bg-white/50"
+                className={`h-2 rounded-full transition-all ${current === index ? "w-8 bg-teal-400" : "w-2 bg-white/50"
                   }`}
                 onClick={() => api?.scrollTo(index)}
                 aria-label={`Ir al slide ${index + 1} de ${carouselData.length}`}

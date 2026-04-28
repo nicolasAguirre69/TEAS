@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-gradient-to-b hover:from-[#FF9900] hover:to-[#EC5406]",
+        default: "bg-primary text-primary-foreground hover:bg-gradient-to-b hover:from-[#00ae9d] hover:to-[#2d4258]",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
@@ -22,7 +22,7 @@ const buttonVariants = cva(
         purple:
           "bg-gradient-to-t from-[#320061] to-[#9c15c5] text-white hover:bg-purple-50 hover:text-purple-800",
         orange:
-          "bg-gradient-to-b from-[#FF9900] to-[#EC5406] text-black hover:from-[#EC5406] hover:to-[#FF9900] text-white hover:text-white/80",
+          "bg-gradient-to-b from-[#00ae9d] to-[#2d4258] text-black hover:from-[#2d4258] hover:to-[#00ae9d] text-white hover:text-white/80",
         green:
           "bg-gradient-to-b from-[#008000] to-[#006400] text-black hover:from-[#006400] hover:to-[#008000] text-white hover:text-white/80",
       },

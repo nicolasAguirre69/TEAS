@@ -23,7 +23,7 @@ const planFeatures = [
 const plansData = [
   {
     title: "Plan Gamer",
-    speed: "500",
+    speed: "920",
     price: "",
     category: "Gamer",
     caracteristicas: [
@@ -36,7 +36,7 @@ const plansData = [
   {
     title: "Plan 200 Mbps",
     speed: "200",
-    price: "$55.000",
+    price: "$65.000",
     category: "Básico",
     caracteristicas: [
       "Navegación fluida y redes sociales",
@@ -49,8 +49,8 @@ const plansData = [
   },
   {
     title: "Plan 300 Mbps",
-    speed: "300",
-    price: "$70.000",
+    speed: "350",
+    price: "$85.000",
     category: "Básico",
     caracteristicas: [
       "Streaming Full HD en varios dispositivos",
@@ -64,7 +64,7 @@ const plansData = [
   {
     title: "Plan 500 Mbps",
     speed: "500",
-    price: "$90.000",
+    price: "$105.000",
     category: "Básico",
     caracteristicas: [
       "Streaming 4K en múltiples pantallas",
@@ -77,8 +77,8 @@ const plansData = [
   },
   {
     title: "Plan 750 Mbps",
-    speed: "750",
-    price: "$120.000",
+    speed: "700",
+    price: "$125.000",
     category: "Básico",
     caracteristicas: [
       "Gaming competitivo",
@@ -88,20 +88,7 @@ const plansData = [
       "Descargas ultra rápidas",
     ],
     extras: [],
-  },
-  {
-    title: "Plan 920 Mbps",
-    speed: "920",
-    price: "$150.000",
-    category: "Básico",
-    caracteristicas: [
-      "Rendimiento cercano a 1 Gbps real",
-      "Streaming 8K sin buffering",
-      "Gaming competitivo profesional",
-      "Ideal para empresas pequeñas o streamers",
-    ],
-    extras: [],
-  },
+  }
 ];
 
 function PlanInternetPage() {
@@ -121,7 +108,7 @@ function PlanInternetPage() {
         <Suspense fallback={<LoadingSpinner fullScreen size="xl" />}>
           <BannerPlanes
             image="internet/internet-fibra-optica-banner.webp"
-            className="bg-gradient-to-r from-orange-400 via-orange-600 to-orange-800"
+            className="bg-gradient-to-r from-teal-400 via-teal-600 to-teal-800"
           >
             <section className="flex flex-col items-center justify-center text-center">
               <Badge
@@ -131,65 +118,65 @@ function PlanInternetPage() {
                 Fibra óptica 100% para tu hogar
               </Badge>
 
-              <h2 className="max-w-3xl sm:max-w-4xl text-5xl sm:text-5xl lg:text-6xl xl:text-7xl text-orange-50 font-extrabold leading-tight tracking-wide drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
+              <h2 className="max-w-3xl sm:max-w-4xl text-5xl sm:text-5xl lg:text-6xl xl:text-7xl text-teal-50 font-extrabold leading-tight tracking-wide drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
                 <span className="block">
                   Los planes{" "}
-                  <span className="bg-gradient-to-r from-orange-100 via-amber-200 to-orange-300 bg-clip-text text-transparent hover:from-orange-300 hover:via-orange-100 hover:to-amber-200 transition-all duration-300">
+                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
                     más veloces
                   </span>
                 </span>
                 <span className="block mt-1">
                   de{" "}
-                  <span className="bg-gradient-to-r from-orange-100 via-white to-orange-200 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
                     internet
                   </span>{" "}
                   para tu{" "}
-                  <span className="bg-gradient-to-r from-orange-100 via-amber-100 to-orange-200 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
                     hogar.
                   </span>
                 </span>
               </h2>
               {/* Feature Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-full max-w-4xl">
-                <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
+                <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
                   <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                       <Zap className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-orange-50">
+                    <h3 className="text-lg font-bold text-teal-50">
                       Velocidad Simétrica
                     </h3>
-                    <p className="text-sm text-orange-100/80">
+                    <p className="text-sm text-teal-100/80">
                       Misma velocidad de subida y bajada para todas tus actividades
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
+                <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105">
                   <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                       <Wifi className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-orange-50">
+                    <h3 className="text-lg font-bold text-teal-50">
                       100% Fibra Óptica
                     </h3>
-                    <p className="text-sm text-orange-100/80">
+                    <p className="text-sm text-teal-100/80">
                       Tecnología de punta directo hasta tu hogar
                     </p>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-black/20 border-orange-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1">
+                <Card className="bg-black/20 border-teal-300/20 backdrop-blur hover:bg-black/30 transition-all duration-300 hover:scale-105 sm:col-span-2 lg:col-span-1">
                   <CardContent className="flex flex-col items-center text-center p-6 gap-3">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center shadow-lg">
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center shadow-lg">
                       <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-bold text-orange-50">
+                    <h3 className="text-lg font-bold text-teal-50">
                       Conexión Estable
                     </h3>
-                    <p className="text-sm text-orange-100/80">
+                    <p className="text-sm text-teal-100/80">
                       Sin cortes ni interrupciones en tu servicio
                     </p>
                   </CardContent>
@@ -216,7 +203,7 @@ function PlanInternetPage() {
             <div className="space-y-6 px-4 md:px-0">
               <div className="space-y-4">
                 <div className="inline-block">
-                  <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-orange-500/30 mb-4">
+                  <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-teal-500/30 mb-4">
                     Internet de alta calidad
                   </span>
                 </div>
@@ -225,11 +212,11 @@ function PlanInternetPage() {
                     INTERNET RÁPIDO Y ESTABLE PARA TU HOGAR
                   </span>
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full" />
+                <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full" />
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
                   Optimiza tu experiencia digital con planes de fibra óptica
                   diseñados para ofrecer el mejor desempeño y{" "}
-                  <span className="font-semibold text-orange-600">
+                  <span className="font-semibold text-teal-600">
                     latencias bajas
                   </span>
                   .
@@ -238,7 +225,7 @@ function PlanInternetPage() {
 
               <div className="pt-6 space-y-5">
                 <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/30">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30">
                     <Check className="h-5 w-5 text-white" />
                   </div>
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -253,7 +240,7 @@ function PlanInternetPage() {
                         key={index}
                         className="flex items-start gap-4 group hover:translate-x-1 transition-transform duration-300"
                       >
-                        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-md shadow-orange-500/30 group-hover:shadow-lg group-hover:shadow-orange-500/50 transition-all duration-300 group-hover:scale-110">
+                        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md shadow-teal-500/30 group-hover:shadow-lg group-hover:shadow-teal-500/50 transition-all duration-300 group-hover:scale-110">
                           <Check className="h-4 w-4 text-white" />
                         </div>
                         <span className="text-gray-800 text-base md:text-lg font-medium leading-relaxed pt-0.5 group-hover:text-gray-900 transition-colors">
@@ -268,6 +255,7 @@ function PlanInternetPage() {
           </div>
         </div>
       </div >
+      <br />
     </>
   );
 }

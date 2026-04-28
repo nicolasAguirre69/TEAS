@@ -16,7 +16,7 @@ const sections = [
     content: (
       <p className="text-base text-muted-foreground">
         La Beca es organizada por{" "}
-        <span className="font-semibold text-[#ff6400]">Inttel Go</span>, empresa
+        <span className="font-semibold text-[#00ae9d]">Inttel Go</span>, empresa
         prestadora de servicios de telecomunicaciones, quien será la responsable
         de la gestión, selección, asignación de la beca y pagos del mismo.
       </p>
@@ -30,7 +30,7 @@ const sections = [
         culminar sus procesos formativos de educación superior en modalidad
         presencial (técnica, tecnológica o profesional), que cumplan con los
         requisitos establecidos por{" "}
-        <span className="font-semibold text-[#ff6400]">Inttel Go</span>,
+        <span className="font-semibold text-[#00ae9d]">Inttel Go</span>,
         promoviendo el acceso equitativo a oportunidades educativas y
         contribuyendo a su desarrollo académico, personal y social.
       </p>
@@ -42,12 +42,12 @@ const sections = [
       <div className="space-y-4 text-base text-muted-foreground">
         <p>
           La Beca{" "}
-          <span className="font-semibold text-[#ff6400]">Inttel Go 2026</span> –
+          <span className="font-semibold text-[#00ae9d]">Inttel Go 2026</span> –
           Educación Superior (Beca Completa) cubrirá el valor total de los
           semestres académicos del programa de educación superior presencial al
           que el beneficiario haya sido admitido, de acuerdo con las condiciones
           definidas por{" "}
-          <span className="font-semibold text-[#ff6400]">Inttel Go</span>.
+          <span className="font-semibold text-[#00ae9d]">Inttel Go</span>.
         </p>
         <p>La beca podrá incluir:</p>
         <ul className="space-y-2 ml-6 list-disc">
@@ -58,7 +58,7 @@ const sections = [
           <li>Acompañamiento institucional durante la vigencia de la beca.</li>
           <li>
             Beneficios complementarios definidos por{" "}
-            <span className="font-semibold text-[#ff6400]">Inttel Go</span>, si
+            <span className="font-semibold text-[#00ae9d]">Inttel Go</span>, si
             así se determina.
           </li>
         </ul>
@@ -67,8 +67,8 @@ const sections = [
           al cumplimiento de los requisitos establecidos en los presentes
           términos y condiciones.
         </p>
-        <div className="rounded-2xl border border-[#ff6400]/40 bg-[#fff4ec] p-5">
-          <p className="font-medium text-[#a13d00]">
+        <div className="rounded-2xl border border-[#00ae9d]/40 bg-[#e6f7f5] p-5">
+          <p className="font-medium text-[#1f2d3a]">
             <strong>Parágrafo:</strong> La beca aplica exclusivamente para
             programas de estudio en modalidad presencial. No se cubrirán
             programas virtuales, a distancia o semipresenciales.
@@ -94,7 +94,7 @@ const sections = [
             "No registrar deudas pendientes con Inttel Go",
           ].map((requisito, index) => (
             <li key={index} className="flex items-start gap-3">
-              <CheckCircle2 className="mt-1 h-5 w-5 text-[#ff6400] flex-shrink-0" />
+              <CheckCircle2 className="mt-1 h-5 w-5 text-[#00ae9d] flex-shrink-0" />
               <span>{requisito}</span>
             </li>
           ))}
@@ -107,18 +107,18 @@ const sections = [
     content: (
       <div className="space-y-3 text-base text-muted-foreground">
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>La inscripción será gratuita.</p>
         </div>
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>
             Se realizará dentro de las fechas establecidas y comunicadas por{" "}
-            <span className="font-semibold text-[#ff6400]">Inttel Go</span>.
+            <span className="font-semibold text-[#00ae9d]">Inttel Go</span>.
           </p>
         </div>
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>
             La información suministrada deberá ser veraz; cualquier
             inconsistencia podrá causar la descalificación.
@@ -132,21 +132,21 @@ const sections = [
     content: (
       <div className="space-y-3 text-base text-muted-foreground">
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>
             La selección será realizada por un comité designado por{" "}
-            <span className="font-semibold text-[#ff6400]">Inttel Go</span>.
+            <span className="font-semibold text-[#00ae9d]">Inttel Go</span>.
           </p>
         </div>
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>
             Se evaluarán criterios como necesidad, mérito, impacto social y
             cumplimiento de requisitos.
           </p>
         </div>
         <div className="flex items-start gap-3">
-          <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+          <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
           <p>La decisión del comité será definitiva e inapelable.</p>
         </div>
       </div>
@@ -158,7 +158,7 @@ const sections = [
       <div className="space-y-4 text-base text-muted-foreground">
         <p>
           El beneficiario de la Beca{" "}
-          <span className="font-semibold text-[#ff6400]">Inttel Go 2026</span> –
+          <span className="font-semibold text-[#00ae9d]">Inttel Go 2026</span> –
           Educación Superior (Beca Completa) se compromete a:
         </p>
         <ul className="space-y-3">
@@ -172,7 +172,7 @@ const sections = [
             "Informar oportunamente cualquier situación académica o personal que pueda afectar la continuidad de la beca.",
           ].map((obligacion, index) => (
             <li key={index} className="flex items-start gap-3">
-              <CheckCircle2 className="mt-1 h-5 w-5 text-[#ff6400] flex-shrink-0" />
+              <CheckCircle2 className="mt-1 h-5 w-5 text-[#00ae9d] flex-shrink-0" />
               <span>{obligacion}</span>
             </li>
           ))}
@@ -197,16 +197,16 @@ const sections = [
             "Incumplimiento de los presentes términos y condiciones.",
           ].map((causal, index) => (
             <li key={index} className="flex items-start gap-3">
-              <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+              <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
               <span>{causal}</span>
             </li>
           ))}
         </ul>
-        <div className="rounded-2xl border border-[#ff6400]/40 bg-[#fff4ec] p-5">
-          <p className="font-medium text-[#a13d00]">
+        <div className="rounded-2xl border border-[#00ae9d]/40 bg-[#e6f7f5] p-5">
+          <p className="font-medium text-[#1f2d3a]">
             <strong>Parágrafo:</strong> El beneficiario deberá contar con
             disponibilidad para asistir de manera presencial a la oficina de{" "}
-            <span className="font-semibold text-[#ff6400]">Inttel Go</span>{" "}
+            <span className="font-semibold text-[#00ae9d]">Inttel Go</span>{" "}
             cuando sea requerido. La no asistencia injustificada podrá ser
             causal de suspensión o pérdida del beneficio.
           </p>
@@ -220,17 +220,17 @@ const sections = [
       <div className="space-y-3 text-base text-muted-foreground">
         <p>
           Los participantes autorizan a{" "}
-          <span className="font-semibold text-[#ff6400]">Inttel Go</span> a:
+          <span className="font-semibold text-[#00ae9d]">Inttel Go</span> a:
         </p>
         <ul className="space-y-3">
           <li className="flex items-start gap-3">
-            <CheckCircle2 className="mt-1 h-5 w-5 text-[#ff6400] flex-shrink-0" />
+            <CheckCircle2 className="mt-1 h-5 w-5 text-[#00ae9d] flex-shrink-0" />
             <span>
               Tratar sus datos personales conforme a la normativa vigente.
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <CheckCircle2 className="mt-1 h-5 w-5 text-[#ff6400] flex-shrink-0" />
+            <CheckCircle2 className="mt-1 h-5 w-5 text-[#00ae9d] flex-shrink-0" />
             <span>
               Utilizar su nombre e imagen con fines informativos y promocionales
               de la beca, sin compensación adicional.
@@ -248,7 +248,7 @@ const sections = [
     title: "10. PROTECCIÓN DE DATOS PERSONALES",
     content: (
       <p className="text-base text-muted-foreground">
-        <span className="font-semibold text-[#ff6400]">Inttel Go</span>{" "}
+        <span className="font-semibold text-[#00ae9d]">Inttel Go</span>{" "}
         garantizará el tratamiento adecuado de los datos personales conforme a
         la Ley de Protección de Datos vigente en Colombia.
       </p>
@@ -258,10 +258,10 @@ const sections = [
     title: "11. MODIFICACIONES",
     content: (
       <p className="text-base text-muted-foreground">
-        <span className="font-semibold text-[#ff6400]">Inttel Go</span> se
+        <span className="font-semibold text-[#00ae9d]">Inttel Go</span> se
         reserva el derecho de modificar estos términos y condiciones, así como
         de suspender o cancelar la Beca{" "}
-        <span className="font-semibold text-[#ff6400]">Inttel Go 2026</span>,
+        <span className="font-semibold text-[#00ae9d]">Inttel Go 2026</span>,
         informándolo oportunamente.
       </p>
     ),
@@ -272,7 +272,7 @@ const sections = [
       <div className="space-y-4 text-base text-muted-foreground">
         <p>
           La participación en la Beca{" "}
-          <span className="font-semibold text-[#ff6400]">Inttel Go 2026</span>{" "}
+          <span className="font-semibold text-[#00ae9d]">Inttel Go 2026</span>{" "}
           implica el conocimiento y aceptación total de los presentes términos y
           condiciones.
         </p>
@@ -300,18 +300,18 @@ export default function TerminosBecaPage() {
               Términos y condiciones
             </CardTitle>
             <CardDescription className="max-w-3xl text-base text-muted-foreground">
-              <span className="font-semibold text-[#ff6400]">
+              <span className="font-semibold text-[#00ae9d]">
                 BECA INTTEL GO 2026
               </span>{" "}
               (Dirigida a clientes de Inttel Go SAS)
             </CardDescription>
             <p className="max-w-3xl text-base text-muted-foreground mt-4">
               La Beca{" "}
-              <span className="font-semibold text-[#ff6400]">
+              <span className="font-semibold text-[#00ae9d]">
                 Inttel Go 2026
               </span>{" "}
               es una iniciativa de responsabilidad social de{" "}
-              <span className="font-semibold text-[#ff6400]">Inttel Go</span>{" "}
+              <span className="font-semibold text-[#00ae9d]">Inttel Go</span>{" "}
               que busca apoyar el acceso a la conectividad y/o formación
               académica de la comunidad. Al postularse, los participantes
               aceptan íntegramente los presentes términos y condiciones.
@@ -333,8 +333,8 @@ export default function TerminosBecaPage() {
               <CardContent>{content}</CardContent>
             </Card>
           ))}
-          <div className="rounded-2xl border border-[#ff6400]/40 bg-[#fff4ec] p-5 text-center">
-            <p className="font-semibold text-lg text-[#ff6400]">
+          <div className="rounded-2xl border border-[#00ae9d]/40 bg-[#e6f7f5] p-5 text-center">
+            <p className="font-semibold text-lg text-[#00ae9d]">
               Inttel Go – Conectamos oportunidades donde otros no llegan
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function TerminosBecaPage() {
         <Separator className="bg-black/10" />
         <Button
           variant="link"
-          className="self-start p-0 text-sm font-semibold text-[#ff6400] hover:text-[#d95300]"
+          className="self-start p-0 text-sm font-semibold text-[#00ae9d] hover:text-[#2d4258]"
           asChild
         >
           <a href="mailto:info@inttelgo.com">¿Tienes dudas? Contáctanos</a>

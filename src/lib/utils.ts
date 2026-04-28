@@ -13,7 +13,7 @@ export function externalLink(text: string, url: string) {
       href: url,
       target: "_blank",
       rel: "noopener noreferrer",
-      className: "text-[#ff6400] hover:text-[#d95300]",
+      className: "text-[#00ae9d] hover:text-[#2d4258]",
     },
     text
   );

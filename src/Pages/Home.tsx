@@ -89,7 +89,7 @@ function LazyYouTubeEmbed({ videoId }: { videoId: string }) {
         {/* Overlay con botón de play */}
         <div className="absolute inset-0 bg-black/40 group-hover/placeholder:bg-black/50 transition-colors flex items-center justify-center">
           <div className="bg-white/90 rounded-full p-4 group-hover/placeholder:scale-110 transition-transform">
-            <Play className="w-12 h-12 text-orange-500 fill-orange-500" />
+            <Play className="w-12 h-12 text-teal-500 fill-teal-500" />
           </div>
         </div>
         {/* Texto indicador */}
@@ -107,7 +107,7 @@ function LazyYouTubeEmbed({ videoId }: { videoId: string }) {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerPolicy="strict-origin-when-cross-origin"
       allowFullScreen
-      className="w-[90%] h-[90%] rounded-lg shadow-lg group-hover/iframe:shadow-orange-500/50 transition-all duration-500 group-hover/iframe:scale-105"
+      className="w-[90%] h-[90%] rounded-lg shadow-lg group-hover/iframe:shadow-teal-500/50 transition-all duration-500 group-hover/iframe:scale-105"
     />
   );
 }
@@ -176,7 +176,7 @@ function HomePage() {
 
           {/* Header - Servicio de calidad */}
           <div className="text-center w-full max-w-3xl mx-auto space-y-4">
-            <span className="inline-block text-orange-500 text-sm font-semibold tracking-widest uppercase">
+            <span className="inline-block text-teal-500 text-sm font-semibold tracking-widest uppercase">
               Nuestros servicios
             </span>
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-foreground tracking-tight">
@@ -198,9 +198,9 @@ function HomePage() {
                   animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
                 }}
               >
-                <Card className="w-full h-full bg-gradient-to-b from-black via-zinc-950 to-black hover:border-orange-500/40 rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-orange-500/60 hover:scale-[1.02] hover:-translate-y-1">
+                <Card className="w-full h-full bg-gradient-to-b from-black via-zinc-950 to-black hover:border-teal-500/40 rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-teal-500/60 hover:scale-[1.02] hover:-translate-y-1">
                   <CardHeader className="text-center flex flex-col items-center justify-center pb-2">
-                    <div className="w-20 h-20 mb-4 rounded-2xl bg-orange-500/20 flex items-center justify-center transition-all duration-500 ease-out group-hover:bg-orange-500 group-hover:scale-110">
+                    <div className="w-20 h-20 mb-4 rounded-2xl bg-teal-500/20 flex items-center justify-center transition-all duration-500 ease-out group-hover:bg-teal-500 group-hover:scale-110">
                       <img
                         src={card.imagePath}
                         alt={card.title}
@@ -211,7 +211,7 @@ function HomePage() {
                         height={48}
                       />
                     </div>
-                    <CardTitle className="text-xl font-bold text-orange-500 transition-colors duration-300 group-hover:text-orange-200">
+                    <CardTitle className="text-xl font-bold text-teal-500 transition-colors duration-300 group-hover:text-teal-200">
                       {card.title}
                     </CardTitle>
                   </CardHeader>
@@ -242,7 +242,7 @@ function HomePage() {
           {/* Card CRC - Derechos del usuario */}
           <div className="w-full flex justify-center">
             <Card
-              className="p-0 w-full max-w-xl rounded-2xl overflow-hidden hover:border-orange-500/40 hover:shadow-2xl hover:shadow-orange-500/60 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 cursor-pointer group/crc"
+              className="p-0 w-full max-w-xl rounded-2xl overflow-hidden hover:border-teal-500/40 hover:shadow-2xl hover:shadow-teal-500/60 hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 cursor-pointer group/crc"
               onClick={() =>
                 window.open(
                   "https://www.crcom.gov.co/es/pagina/regimen-proteccion-usuario",
@@ -274,14 +274,14 @@ function HomePage() {
 
           {/* Card PSE */}
           <Card
-            className="group w-full h-full bg-gradient-to-b from-black via-zinc-950 to-black hover:border-orange-500/40 rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-orange-500/60 hover:scale-[1.02] hover:-translate-y-1"
+            className="group w-full h-full bg-gradient-to-b from-black via-zinc-950 to-black hover:border-teal-500/40 rounded-2xl overflow-hidden transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-teal-500/60 hover:scale-[1.02] hover:-translate-y-1"
             style={{
               animation: `fadeInUp 0.8s ease-out 0.3s both`,
             }}
           >
 
             <CardHeader className="relative z-10 text-center md:text-left pb-4">
-              <CardTitle className="text-xl sm:text-2xl font-bold text-orange-500 group-hover:text-orange-200 transition-colors duration-300">
+              <CardTitle className="text-xl sm:text-2xl font-bold text-teal-500 group-hover:text-teal-200 transition-colors duration-300">
                 ¿Sabías que contamos con PSE para pagar tu factura?
               </CardTitle>
               <CardDescription className="text-primary-foreground text-sm sm:text-base">
@@ -315,8 +315,8 @@ function HomePage() {
                   <div className="absolute top-4 right-4 md:top-1/2 md:right-1/2 md:translate-x-16 md:-translate-y-1/2 z-20 pointer-events-none animate-cursor-click">
                     <div className="relative">
                       <MousePointerClick
-                        className="w-16 h-16 md:w-20 md:h-20 text-white drop-shadow-[0_0_10px_rgba(255,153,0,0.8)]"
-                        fill="rgba(255, 153, 0, 0.3)"
+                        className="w-16 h-16 md:w-20 md:h-20 text-white drop-shadow-[0_0_10px_rgba(0,174,157,0.8)]"
+                        fill="rgba(0, 174, 157, 0.3)"
                         stroke="currentColor"
                         strokeWidth={2}
                       />
@@ -326,7 +326,7 @@ function HomePage() {
                   <img
                     src="/pse.svg"
                     alt="Pagar con PSE - Inttelgo"
-                    className="w-[80%]  object-contain relative z-10 animate-float group-hover:scale-110 group-hover:drop-shadow-[0_0_6px_rgba(255,153,0,0.5)] transition-all duration-300"
+                    className="w-[80%]  object-contain relative z-10 animate-float group-hover:scale-110 group-hover:drop-shadow-[0_0_6px_rgba(0,174,157,0.5)] transition-all duration-300"
                     loading="lazy"
                     decoding="async"
                     width={300}

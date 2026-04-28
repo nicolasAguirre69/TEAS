@@ -16,12 +16,12 @@ export interface TableCalculateRow {
 
 const tableVariants = {
   orange: {
-    headerBorder: "border-orange-200",
-    rowBorder: "border-orange-100",
-    rowHover: "hover:bg-orange-50/30",
-    valueText: "text-orange-700",
-    totalBorder: "border-orange-300",
-    totalValue: "text-orange-700",
+    headerBorder: "border-teal-200",
+    rowBorder: "border-teal-100",
+    rowHover: "hover:bg-teal-50/30",
+    valueText: "text-teal-700",
+    totalBorder: "border-teal-300",
+    totalValue: "text-teal-700",
   },
   blue: {
     headerBorder: "border-blue-200",

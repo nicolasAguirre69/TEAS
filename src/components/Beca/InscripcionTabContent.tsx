@@ -29,19 +29,19 @@ export function InscripcionTabContent({
     >
       <div className="space-y-10 max-w-4xl mx-auto">
         <div className="text-center space-y-6">
-          <div className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-bold uppercase tracking-wider shadow-lg shadow-orange-500/50 animate-pulse">
+          <div className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-bold uppercase tracking-wider shadow-lg shadow-teal-500/50 animate-pulse">
             ¡Nuevo!
           </div>
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent drop-shadow-2xl">
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 bg-clip-text text-transparent drop-shadow-2xl">
             ¡INSCRIPCIONES ABIERTAS!
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto rounded-full" />
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-teal-500 to-transparent mx-auto rounded-full" />
         </div>
 
         <div className="space-y-6 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
           <p className="text-xl md:text-2xl font-medium leading-relaxed text-white/90 text-center">
             Ya están abiertas las inscripciones para las becas de estudio{" "}
-            <span className="font-bold text-orange-400">INTTELGO {year}</span>.
+            <span className="font-bold text-teal-400">INTTELGO {year}</span>.
             Asegúrate de cumplir con los requisitos para participar.
           </p>
 
@@ -53,7 +53,7 @@ export function InscripcionTabContent({
                   key={index}
                   className="flex items-start gap-4 text-lg text-white/90"
                 >
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-sm mt-1">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center text-white font-bold text-sm mt-1">
                     <CheckCheck className="w-4 h-4" />
                   </span>
                   <span>{req}</span>
@@ -72,7 +72,7 @@ export function InscripcionTabContent({
           >
             <Button
               variant="orange"
-              className="flex items-center gap-4 py-7 px-12 text-xl md:text-2xl font-bold text-white shadow-2xl shadow-orange-500/50 hover:shadow-orange-500/70 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-600"
+              className="flex items-center gap-4 py-7 px-12 text-xl md:text-2xl font-bold text-white shadow-2xl shadow-teal-500/50 hover:shadow-teal-500/70 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r hover:from-teal-500 hover:to-teal-600"
             >
               <span>¡Postularme!</span>
             </Button>

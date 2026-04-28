@@ -412,7 +412,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
             render={({ field }) => (
               <FormItem className="space-y-3">
                 <FormLabel className="flex items-center gap-2 text-base font-semibold text-black">
-                  <User className="h-4 w-4 text-[#ff6400]" />
+                  <User className="h-4 w-4 text-[#00ae9d]" />
                   Tipo de usuario *
                 </FormLabel>
                 <Select onValueChange={field.onChange} value={field.value}>
@@ -443,7 +443,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
             render={({ field }) => (
               <FormItem className="space-y-3">
                 <FormLabel className="flex items-center gap-2 text-base font-semibold text-black">
-                  <CreditCard className="h-4 w-4 text-[#ff6400]" />
+                  <CreditCard className="h-4 w-4 text-[#00ae9d]" />
                   Tipo de Identificación *
                 </FormLabel>
                 <Select
@@ -479,13 +479,13 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
             render={({ field }) => (
               <FormItem className="space-y-3 sm:col-span-2">
                 <FormLabel className="flex items-center gap-2 text-base font-semibold text-black">
-                  <Hash className="h-4 w-4 text-[#ff6400]" />
+                  <Hash className="h-4 w-4 text-[#00ae9d]" />
                   Número de Identificación *
                 </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Ingresa tu número"
-                    className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#ff6400] focus:ring-[#ff6400]/40"
+                    className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#00ae9d] focus:ring-[#00ae9d]/40"
                     {...field}
                   />
                 </FormControl>
@@ -498,19 +498,19 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
           <Card
             role="alert"
             aria-live="polite"
-            className="w-full overflow-hidden border-2 border-orange-200 bg-gradient-to-br from-orange-50 via-white to-amber-50/80 shadow-lg shadow-orange-200/40 ring-1 ring-orange-100 p-0"
+            className="w-full overflow-hidden border-2 border-teal-200 bg-gradient-to-br from-teal-50 via-white to-teal-50/80 shadow-lg shadow-teal-200/40 ring-1 ring-teal-100 p-0"
           >
             <div
-              className="h-5.5 w-full bg-gradient-to-r from-[#ff9900] to-[#ec5406]"
+              className="h-5.5 w-full bg-gradient-to-r from-[#00ae9d] to-[#2d4258]"
               aria-hidden
             />
             <CardContent className="p-4 sm:px-6">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-5">
-                <div className="flex size-14 flex-shrink-0 items-center justify-center rounded-2xl border border-orange-200 bg-white shadow-inner shadow-orange-100/80">
-                  <AlertTriangle className="h-7 w-7 text-[#ec5406]" strokeWidth={2.25} />
+                <div className="flex size-14 flex-shrink-0 items-center justify-center rounded-2xl border border-teal-200 bg-white shadow-inner shadow-teal-100/80">
+                  <AlertTriangle className="h-7 w-7 text-[#2d4258]" strokeWidth={2.25} />
                 </div>
                 <div className="min-w-0 space-y-1.5">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#ec5406]">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-[#2d4258]">
                     Aviso importante
                   </p>
                   <h2 className="text-lg font-bold leading-snug text-gray-900 sm:text-xl break-words">
@@ -542,10 +542,10 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
         </Button>
 
         {consultLoading && (
-          <Card className="border-dashed border-orange-200 bg-orange-50/60 shadow-none w-full overflow-hidden">
+          <Card className="border-dashed border-teal-200 bg-teal-50/60 shadow-none w-full overflow-hidden">
             <CardContent className="flex items-center gap-3 py-4 sm:py-6 px-4 sm:px-6">
-              <Loader2 className="h-5 w-5 animate-spin text-orange-500 flex-shrink-0" />
-              <p className="text-sm font-medium text-orange-700 break-words">
+              <Loader2 className="h-5 w-5 animate-spin text-teal-500 flex-shrink-0" />
+              <p className="text-sm font-medium text-teal-700 break-words">
                 Consultando información del servicio. Esto puede tardar unos segundos.
               </p>
             </CardContent>
@@ -555,22 +555,22 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
         {!consultLoading && queryMade && (
           <>
             {/* Información del Cliente */}
-            <Card className="border-[#ff6400]/40 shadow-sm shadow-[#ff6400]/10 w-full overflow-hidden">
+            <Card className="border-[#00ae9d]/40 shadow-sm shadow-[#00ae9d]/10 w-full overflow-hidden">
               <PageHeader
                 className=""
                 title={
                   <div className="flex flex-row gap-2 items-center">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#ff6400]/10 flex-shrink-0">
-                      <User className="h-6 w-6 text-[#ff6400]" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#00ae9d]/10 flex-shrink-0">
+                      <User className="h-6 w-6 text-[#00ae9d]" />
                     </div>
                     Información del cliente
                   </div>
                 }
                 subtitle="Verifica y actualiza los datos antes de continuar"
-                titleClassName="text-lg font-semibold text-[#ff6400] break-words"
+                titleClassName="text-lg font-semibold text-[#00ae9d] break-words"
                 subtitleClassName="text-xs text-muted-foreground break-words"
               />
-              <Separator className="mb-4 mt-2 bg-[#ff6400]/30" />
+              <Separator className="mb-4 mt-2 bg-[#00ae9d]/30" />
               <CardContent className="space-y-2 overflow-hidden">
                 <div className="grid gap-6 sm:grid-cols-2 w-full max-w-full">
                   <FormField
@@ -624,7 +624,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                           <Input
                             type="email"
                             placeholder="Ingresa el correo del cliente"
-                            className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#ff6400] focus:ring-[#ff6400]/40"
+                            className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#00ae9d] focus:ring-[#00ae9d]/40"
                             {...field}
                           />
                         </FormControl>
@@ -642,7 +642,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                         <FormControl>
                           <Input
                             placeholder="Ingresa la dirección del cliente"
-                            className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#ff6400] focus:ring-[#ff6400]/40"
+                            className="h-12 rounded-lg border border-black/10 bg-white px-4 text-sm focus:border-[#00ae9d] focus:ring-[#00ae9d]/40"
                             {...field}
                           />
                         </FormControl>
@@ -838,7 +838,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                           title: (
                             <div className="flex items-center gap-2">
                               {hasCupones && (
-                                <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0" />
+                                <AlertTriangle className="h-4 w-4 text-teal-600 flex-shrink-0" />
                               )}
                               <span>{description || "Servicio"}</span>
                             </div>
@@ -883,7 +883,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                                   {cupones.map((cupon, idx) => (
                                     <div
                                       key={cupon.id || idx}
-                                      className="p-2 bg-orange-50 rounded border border-orange-200 cursor-pointer hover:bg-orange-100 hover:border-orange-300 transition-colors"
+                                      className="p-2 bg-teal-50 rounded border border-teal-200 cursor-pointer hover:bg-teal-100 hover:border-teal-300 transition-colors"
                                       onClick={(e) => {
                                         e.stopPropagation();
                                         handleSelectPaymentForDiscount(payment);
@@ -902,9 +902,9 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                                       aria-label="Ver detalles de descuentos"
                                     >
                                       <div className="flex items-start justify-between gap-2">
-                                        <Info className="h-4 w-4 text-orange-600" />
+                                        <Info className="h-4 w-4 text-teal-600" />
                                         <div className="flex-1 min-w-0">
-                                          <p className="text-xs font-semibold text-orange-900 break-words">
+                                          <p className="text-xs font-semibold text-teal-900 break-words">
                                             {cupon.tipo_descuento_descripcion ||
                                               cupon.razon ||
                                               cupon.descripcion}
@@ -915,7 +915,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                                         </div>
                                         {cupon.valor_descuento && (
                                           <div className="flex-shrink-0">
-                                            <span className="text-xs font-bold text-orange-600">
+                                            <span className="text-xs font-bold text-teal-600">
                                               {cupon.valor_descuento}%
                                             </span>
                                           </div>
@@ -952,8 +952,8 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                         },
                       };
                     })}
-                    headerClassName="bg-gradient-to-b from-[#ff9900] to-[#ec5406]"
-                    borderClassName="border-orange-200"
+                    headerClassName="bg-gradient-to-b from-[#00ae9d] to-[#2d4258]"
+                    borderClassName="border-teal-200"
                     accentColor="orange"
                     className="mt-4"
                   />
@@ -1048,7 +1048,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                 )}
 
                 {/* Bank Selection */}
-                <Card className="border-orange-200 shadow-lg w-full overflow-hidden">
+                <Card className="border-teal-200 shadow-lg w-full overflow-hidden">
                   <CardContent className="space-y-6 p-4 sm:p-6">
                     <FormField
                       control={form.control}
@@ -1056,7 +1056,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
                       render={({ field }) => (
                         <FormItem className="space-y-3">
                           <FormLabel className="flex items-center gap-2 text-lg">
-                            <CreditCard className="h-5 w-5 text-orange-500" />
+                            <CreditCard className="h-5 w-5 text-teal-500" />
                             Seleccione su banco*
                           </FormLabel>
                           <Select
@@ -1142,7 +1142,7 @@ function NormalPaymentFlow({ handleSelectPaymentForDiscount, handleDiscountDialo
               <div className="flex items-start gap-3">
                 <input
                   type="checkbox"
-                  className="mt-1 h-4 w-4 rounded border border-black/40 text-[#ff6400] focus:ring-[#ff6400]"
+                  className="mt-1 h-4 w-4 rounded border border-black/40 text-[#00ae9d] focus:ring-[#00ae9d]"
                   checked={field.value}
                   onChange={(event) => field.onChange(event.target.checked)}
                 />

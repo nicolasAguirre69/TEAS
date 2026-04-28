@@ -241,7 +241,7 @@ function TransactionVerification({
                 <p
                     className={cn(
                         "break-words text-sm font-semibold",
-                        highlight ? "text-orange-600" : "text-gray-900"
+                        highlight ? "text-teal-600" : "text-gray-900"
                     )}
                 >
                     {value}

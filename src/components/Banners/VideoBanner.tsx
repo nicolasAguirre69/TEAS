@@ -59,7 +59,7 @@ const VideoSection = memo(({
             {/* Placeholder mientras carga */}
             {!isLoaded && shouldLoad && (
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
-                    <div className="w-16 h-16 border-4 border-orange-500 border-t-transparent rounded-full animate-spin" />
+                    <div className="w-16 h-16 border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
                 </div>
             )}
 
@@ -241,7 +241,7 @@ export default function VideoBanner() {
                             key={index}
                             onClick={() => setFocusedIndex(index)}
                             className={`h-1 rounded-full transition-all duration-300 ${focusedIndex === index
-                                ? 'w-8 bg-orange-500'
+                                ? 'w-8 bg-teal-500'
                                 : 'w-4 bg-white/50'
                                 }`}
                             aria-label={`Ir a sección ${index + 1}`}
@@ -277,7 +277,7 @@ export default function VideoBanner() {
                             key={index}
                             onClick={() => setFocusedIndex(index)}
                             className={`h-1.5 rounded-full transition-all duration-300 ${focusedIndex === index
-                                ? 'w-12 bg-orange-500'
+                                ? 'w-12 bg-teal-500'
                                 : 'w-6 bg-white/50'
                                 }`}
                             aria-label={`Ir a sección ${index + 1}`}

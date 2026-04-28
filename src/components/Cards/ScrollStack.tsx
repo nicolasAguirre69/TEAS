@@ -401,7 +401,7 @@ const ScrollStack: React.FC<ScrollStackProps> = ({
                     <div
                         className="absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2"
                         style={{
-                            background: 'linear-gradient(to bottom, transparent 0%, #f97316 10%, #f97316 90%, transparent 100%)'
+                            background: 'linear-gradient(to bottom, transparent 0%, #00ae9d 10%, #00ae9d 90%, transparent 100%)'
                         }}
                     />
                     {children}

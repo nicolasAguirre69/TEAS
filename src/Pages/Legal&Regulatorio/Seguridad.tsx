@@ -73,7 +73,7 @@ const phishingRecommendations = [
 const spamParagraphs = [
   "Se llama spam, correo basura a los mensajes no solicitados, habitualmente de tipo publicitario, enviados en cantidades masivas que perjudican de una u otra manera a los usuarios que reciben este correo. Aunque su difusión se puede hacerse por distintas vías, lo mas común es hacerlo vía correo electrónico.",
   <>
-    Actualmente <span className="font-semibold text-[#ff6400]">INTTELGO</span>{" "}
+    Actualmente <span className="font-semibold text-[#00ae9d]">INTTELGO</span>{" "}
     cuenta con una plataforma que protege a los usuarios de este tipo de
     correos.
   </>,
@@ -202,7 +202,7 @@ const mitmConsequences = [
 
 const mitmDefinitions = [
   <>
-    <span className="font-semibold text-[#ff6400]">
+    <span className="font-semibold text-[#00ae9d]">
       Siempre desconfíe de las redes Wi-Fi:
     </span>{" "}
     por definición, las redes Wi-Fi son más susceptibles a los ataques si
@@ -217,7 +217,7 @@ const mitmDefinitions = [
     descargar archivos.
   </>,
   <>
-    <span className="font-semibold text-[#ff6400]">
+    <span className="font-semibold text-[#00ae9d]">
       Solo instale software de fuentes conocidas:
     </span>{" "}
     – muchas amenazas se esconden detrás de software o archivos que parecen
@@ -229,7 +229,7 @@ const mitmDefinitions = [
     el siguiente consejo le ayudará a identificar el proceso.
   </>,
   <>
-    <span className="font-semibold text-[#ff6400]">Antivirus: </span> – esta es
+    <span className="font-semibold text-[#00ae9d]">Antivirus: </span> – esta es
     una recomendación presente en casi todas las publicaciones relacionadas a
     amenazas informáticas de WeLiveSecurity, por el simple hecho de que es una
     de las formas más eficientes de prevenir la mayoría de las amenazas.
@@ -241,17 +241,17 @@ const mitmDefinitions = [
 
 const mitmAdditionalMeasures = [
   <>
-    <span className="font-semibold text-[#ff6400]">Segregar redes:</span> sacar
+    <span className="font-semibold text-[#00ae9d]">Segregar redes:</span> sacar
     hosts del mismo dominio de colisión ayuda a evitar que se realicen ataques
     en toda la red a la vez.
   </>,
   <>
-    <span className="font-semibold text-[#ff6400]">Firewall:</span> proteja
+    <span className="font-semibold text-[#00ae9d]">Firewall:</span> proteja
     estas redes con un firewall que tenga reglas adecuadas, evitando
     interacciones no deseadas.
   </>,
   <>
-    <span className="font-semibold text-[#ff6400]">
+    <span className="font-semibold text-[#00ae9d]">
       Configurar los routers:
     </span>{" "}
     muchos dispositivos de red tienen la capacidad de inspeccionar la tabla ARP
@@ -287,10 +287,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-3">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Ataque "Man-in-the-Middle"
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Ataque “Man-in-the-Middle”
             </CardTitle>
           </CardHeader>
@@ -303,7 +303,7 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Ejecución del ataque
             </CardTitle>
           </CardHeader>
@@ -316,10 +316,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Phishing
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Phishing
             </CardTitle>
           </CardHeader>
@@ -361,7 +361,7 @@ function Seguridad() {
               <ul className="space-y-2">
                 {phishingRecommendations.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400]" />
+                    <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d]" />
                     {item}
                   </li>
                 ))}
@@ -369,7 +369,7 @@ function Seguridad() {
             </div>
             <p>
               A nivel del ISP, actualmente{" "}
-              <span className="font-semibold text-[#ff6400]">INTTELGO</span>
+              <span className="font-semibold text-[#00ae9d]">INTTELGO</span>
               implementa filtros anti-spam que ayudan a proteger a los usuarios
               de los phishers, reduciendo el número de correos electrónicos
               maliciosos recibidos por el usuario.
@@ -379,10 +379,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Spam
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Spam
             </CardTitle>
           </CardHeader>
@@ -401,7 +401,7 @@ function Seguridad() {
               <ul className="space-y-2">
                 {spamRecommendations.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                    <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -409,8 +409,8 @@ function Seguridad() {
             </div>
 
             <Separator className="bg-black/10" />
-            <div className="flex items-start gap-2 rounded-2xl bg-[#fff4ec] p-5 text-sm text-[#a13d00]">
-              <ShieldAlert className="mt-1 h-5 w-5 flex-shrink-0 text-[#ff6400]" />
+            <div className="flex items-start gap-2 rounded-2xl bg-[#e6f7f5] p-5 text-sm text-[#1f2d3a]">
+              <ShieldAlert className="mt-1 h-5 w-5 flex-shrink-0 text-[#00ae9d]" />
               <p>
                 En caso que ustedd como cliente tenga problemas en el envío de
                 correos, para verificar que su IP no se encuentra reportada en
@@ -457,10 +457,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Virus
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Virus
             </CardTitle>
           </CardHeader>
@@ -499,14 +499,14 @@ function Seguridad() {
               <ul className="space-y-2">
                 {virusRecommendations.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                    <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                     {item}
                   </li>
                 ))}
               </ul>
               <p>
                 A nivel de ISP,{" "}
-                <span className="font-semibold text-[#ff6400]">INTTELGO</span>{" "}
+                <span className="font-semibold text-[#00ae9d]">INTTELGO</span>{" "}
                 cuenta actualmente con equipos especializados en la detección y
                 filtrado de correos con virus, mediante filtros de tipo
                 heurístico, firmas de virus reconocidos y adicional cuenta con
@@ -524,10 +524,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Ataque MitM
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Consecuencias de un ataque de Man-in-the-Middle
             </CardTitle>
           </CardHeader>
@@ -541,7 +541,7 @@ function Seguridad() {
                   key={`mitm-consequence-${index}`}
                   className="flex items-start gap-2"
                 >
-                  <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                  <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                   {item}
                 </li>
               ))}
@@ -571,10 +571,10 @@ function Seguridad() {
 
         <Card className="border-black/10 shadow-lg shadow-black/5">
           <CardHeader className="space-y-2">
-            <Badge className="w-fit rounded-full bg-[#fff4ec] px-4 py-1 text-sm font-semibold text-[#ff6400]">
+            <Badge className="w-fit rounded-full bg-[#e6f7f5] px-4 py-1 text-sm font-semibold text-[#00ae9d]">
               Protección MitM
             </Badge>
-            <CardTitle className="text-3xl font-extrabold uppercase text-[#ff6400]">
+            <CardTitle className="text-3xl font-extrabold uppercase text-[#00ae9d]">
               Cómo protegerse de un ataque de Man-in-the-Middle
             </CardTitle>
           </CardHeader>
@@ -585,7 +585,7 @@ function Seguridad() {
                   key={`mitm-definition-${index}`}
                   className="flex items-start gap-2"
                 >
-                  <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                  <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                   <p>{item}</p>
                 </li>
               ))}
@@ -605,7 +605,7 @@ function Seguridad() {
                   key={`mitm-additional-measure-${index}`}
                   className="flex items-start gap-2"
                 >
-                  <ArrowRight className="mt-1 h-4 w-4 text-[#ff6400] flex-shrink-0" />
+                  <ArrowRight className="mt-1 h-4 w-4 text-[#00ae9d] flex-shrink-0" />
                   <p>{item}</p>
                 </li>
               ))}
