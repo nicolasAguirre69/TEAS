@@ -1,0 +1,12 @@
+import { lazy } from "react";
+import type { RouteObject } from "react-router-dom";
+
+// Lazy loading de páginas de error
+const NotFoundPage = lazy(() => import("@/Pages/NotFound"));
+
+export const otherRoutes: RouteObject[] = [
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  },
+];

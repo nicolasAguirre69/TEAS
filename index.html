@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/mano-inttelgo-50px.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- DNS Prefetch para recursos externos -->
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://combopay.co" />
+    <link rel="dns-prefetch" href="https://www.crcom.gov.co" />
+
+    <!-- Preconnect para el mismo dominio (reduce latencia de CSS/JS) -->
+    <link rel="preconnect" href="https://inttelgo.com" />
+    <!-- Preconnect para conexiones críticas -->
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+    <link rel="preconnect" href="https://combopay.co" crossorigin />
+    <!-- Preconnect para Google Fonts (si se usan) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload solo del banner LCP (el primero del carousel) -->
+    <link
+      rel="preload"
+      href="/banners/home/banner-home-galaxia-espacial.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <!-- El segundo banner se carga lazy - no preload para reducir carga inicial -->
+    <link
+      rel="preload"
+      href="/logo-blanco.svg"
+      as="image"
+      type="image/svg+xml"
+      fetchpriority="high"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>Inttelgo - Internet Hogar 100% Fibra Óptica</title>
+    <meta
+      name="title"
+      content="Inttelgo Internet - Internet Hogar 100% Fibra Óptica | Pagos en Línea"
+    />
+    <meta
+      name="description"
+      content="Inttelgo Internet: Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE. Inttelgo pagos en línea, pagos por PSE Inttelgo."
+    />
+    <meta
+      name="keywords"
+      content="Inttelgo Internet, internet hogar, fibra óptica, internet 100% fibra óptica, pagos en línea, pagar tu factura de internet en línea, inttelgo pagos en línea, pagos por pse inttelgo, internet fibra, planes de internet, internet de alta velocidad, internet residencial, inttelgo, proveedor de internet, internet colombia"
+    />
+    <meta name="author" content="Inttelgo S.A.S." />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inttelgo.com/" />
+    <meta
+      property="og:title"
+      content="Inttelgo Internet - Internet Hogar 100% Fibra Óptica | Pagos en Línea"
+    />
+    <meta
+      property="og:description"
+      content="Inttelgo Internet: Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE."
+    />
+    <meta
+      property="og:image"
+      content="https://inttelgo.com/mano-inttelgo-50px.svg"
+    />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="Inttelgo" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://inttelgo.com/" />
+    <meta
+      property="twitter:title"
+      content="Inttelgo Internet - Internet Hogar 100% Fibra Óptica | Pagos en Línea"
+    />
+    <meta
+      property="twitter:description"
+      content="Inttelgo Internet: Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE."
+    />
+    <meta
+      property="twitter:image"
+      content="https://inttelgo.com/mano-inttelgo-50px.svg"
+    />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#EC5406" />
+    <link rel="canonical" href="https://inttelgo.com/" />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="CO" />
+    <meta name="geo.placename" content="Colombia" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CP280SVXEM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CP280SVXEM");
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-18071886634"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-18071886634");
+    </script>
+  </head>
+  <body>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1213203540802164");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1213203540802164&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
