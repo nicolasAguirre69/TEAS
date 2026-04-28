@@ -93,7 +93,7 @@ const PublicLayout = () => {
   return (
     <div className="relative flex min-h-screen flex-col bg-white">
       <ScrollToTop />
-      <div
+      {/*<div
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${showLeadCapture
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0"
@@ -131,7 +131,7 @@ const PublicLayout = () => {
             </form>
           </div>
         </div>
-      </div>
+      </div>*/}
 
       {/* Main Content */}
       <main className="flex-1">

@@ -220,7 +220,7 @@ export default function VideoBanner() {
                 <div className="absolute top-0 left-0 right-0 z-50">
                     <Menu
                         className="text-white hover:text-white/80 bg-transparent"
-                        logo="logo-monocromatico.svg"
+                        logo="logo-negro.svg"
                     />
                 </div>
 
@@ -256,7 +256,7 @@ export default function VideoBanner() {
                 <div className="absolute top-0 left-0 right-0 z-50">
                     <Menu
                         className="text-white hover:text-white/80 bg-transparent"
-                        logo="logo-monocromatico.svg"
+                        logo="logo-negro.svg"
                     />
                 </div>
 

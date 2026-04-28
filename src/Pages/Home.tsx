@@ -147,13 +147,13 @@ function HomePage() {
   return (
     <>
       <SEO
-        title="Inttelgo Internet - Internet Hogar 100% Fibra Óptica | Pagos en Línea"
-        description="Inttelgo Internet: Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE. Inttelgo pagos en línea, pagos por PSE Inttelgo."
-        keywords="Inttelgo Internet, internet hogar, fibra óptica, internet 100% fibra óptica, pagos en línea, pagar tu factura de internet en línea, inttelgo pagos en línea, pagos por pse inttelgo, internet fibra, planes de internet, internet de alta velocidad, internet residencial, inttelgo, proveedor de internet, internet colombia"
-        ogTitle="Inttelgo Internet - Internet Hogar 100% Fibra Óptica"
+        title="TEAS Internet - Internet Hogar 100% Fibra Óptica | Pagos en Línea"
+        description="TEAS Internet: Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE. TEAS pagos en línea, pagos por PSE TEAS."
+        keywords="TEAS Internet, internet hogar, fibra óptica, internet 100% fibra óptica, pagos en línea, pagar tu factura de internet en línea, TEAS pagos en línea, pagos por pse TEAS, internet fibra, planes de internet, internet de alta velocidad, internet residencial, TEAS, proveedor de internet, internet colombia"
+        ogTitle="TEAS Internet - Internet Hogar 100% Fibra Óptica"
         ogDescription="Internet hogar 100% fibra óptica de alta velocidad. Planes de internet, televisión y telefonía. Paga tu factura de internet en línea con PSE."
-        ogUrl="https://inttelgo.com/"
-        canonical="https://inttelgo.com/"
+        ogUrl="https://teas.com.co/"
+        canonical="https://teas.com.co/"
       />
       <div className="w-full overflow-x-hidden space-y-14 md:space-y-10 mb-10 md:mb-20">
         <div className="bg-black flex flex-col items-center justify-center">
@@ -161,7 +161,7 @@ function HomePage() {
           <BannerHome />
           <h2 className="text-5xl text-primary-foreground text-center px-4">
             La mejor parrilla de{" "}
-            <span className="font-extrabold">canales de Bogotá y Soacha</span>
+            <span className="font-extrabold">canales de todo Usme</span>
           </h2>
           <div className="w-full max-w-full overflow-hidden">
             <Suspense fallback={<LoadingSpinner size="lg" />}>
@@ -325,7 +325,7 @@ function HomePage() {
 
                   <img
                     src="/pse.svg"
-                    alt="Pagar con PSE - Inttelgo"
+                    alt="Pagar con PSE - TEAS"
                     className="w-[80%]  object-contain relative z-10 animate-float group-hover:scale-110 group-hover:drop-shadow-[0_0_6px_rgba(0,174,157,0.5)] transition-all duration-300"
                     loading="lazy"
                     decoding="async"

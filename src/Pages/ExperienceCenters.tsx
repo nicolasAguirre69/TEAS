@@ -48,7 +48,7 @@ interface experienceCentersProps {
     office: "Santo Domingo",
     photo: "santo-domingo",
     address: "Cra. 37 Este #44A - 91",
-    link: buildMapsLink("Cra 37 Este #44A-91, Soacha, Cundinamarca, Colombia"),
+    link: buildMapsLink("Cra 37 Este #44A-91, Usme, Cundinamarca, Colombia"),
     priority: "primary",
   },
   {
@@ -56,7 +56,7 @@ interface experienceCentersProps {
     photo: "isla-oasis",
     address: "Calle 42 #41C - 04 Este",
     link: buildMapsLink(
-      "Calle 42 #41C-04 Este, Soacha, Cundinamarca, Colombia"
+      "Calle 42 #41C-04 Este, Usme, Cundinamarca, Colombia"
     ),
     priority: "third",
   },
@@ -64,7 +64,7 @@ interface experienceCentersProps {
     office: "Ciudadela Sucre",
     photo: "ciudadela-sucre",
     address: "Calle 36 #44 - 34 Este",
-    link: buildMapsLink("Calle 36 #44-34 Este, Soacha, Cundinamarca, Colombia"),
+    link: buildMapsLink("Calle 36 #44-34 Este, Usme, Cundinamarca, Colombia"),
     priority: "third",
   },
   {
@@ -72,7 +72,7 @@ interface experienceCentersProps {
     photo: "quintanares",
     address: "Transv. 9 Este #44 - 18",
     link: buildMapsLink(
-      "Transversal 9 Este #44-18, Soacha, Cundinamarca, Colombia"
+      "Transversal 9 Este #44-18, Usme, Cundinamarca, Colombia"
     ),
     priority: "primary",
   },
@@ -81,7 +81,7 @@ interface experienceCentersProps {
     photo: "vista-hermosa",
     address: "Diag. 71B Sur #18I - 95",
     link: buildMapsLink(
-      "Diagonal 71B Sur #18I-95, Soacha, Cundinamarca, Colombia"
+      "Diagonal 71B Sur #18I-95, Usme, Cundinamarca, Colombia"
     ),
     priority: "primary",
   },
@@ -89,7 +89,7 @@ interface experienceCentersProps {
     office: "Tesoro",
     photo: "tesoro",
     address: "Calle 78C #18C - 10",
-    link: buildMapsLink("Calle 78C #18C-10, Soacha, Cundinamarca, Colombia"),
+    link: buildMapsLink("Calle 78C #18C-10, Usme, Cundinamarca, Colombia"),
     priority: "third",
   },
   {
@@ -97,7 +97,7 @@ interface experienceCentersProps {
     photo: "estrella",
     address: "Cra. 18A Bis #73 - 09",
     link: buildMapsLink(
-      "Carrera 18A Bis #73-09, Soacha, Cundinamarca, Colombia"
+      "Carrera 18A Bis #73-09, Usme, Cundinamarca, Colombia"
     ),
     priority: "third",
   },
@@ -106,7 +106,7 @@ interface experienceCentersProps {
     photo: "paraiso",
     address: "Calle 71P Sur #27J - 07",
     link: buildMapsLink(
-      "Calle 71P Sur #27J-07, Soacha, Cundinamarca, Colombia"
+      "Calle 71P Sur #27J-07, Usme, Cundinamarca, Colombia"
     ),
     priority: "third",
   },
@@ -124,15 +124,16 @@ export default function ExperienceCenters() {
   return (
     <div className="min-h-screen bg-muted/20 space-y-12 mb-12">
       <SEO
-        title="Centros de Experiencia - Inttelgo | Atención presencial en Soacha"
-        description="Visita nuestros Centros de Experiencia Inttelgo. Horarios, ubicaciones y atención personalizada para planes de internet, soporte técnico y gestión de servicios."
-        keywords="centros de experiencia inttelgo, oficinas inttelgo, atención presencial soacha, horarios inttelgo"
+        title="Centros de Experiencia - TEAS | Atención presencial en Usme"
+        description="Visita nuestros Centros de Experiencia TEAS. Horarios, ubicaciones y atención personalizada para planes de internet, soporte técnico y gestión de servicios."
+        keywords="centros de experiencia TEAS, oficinas TEAS, atención presencial Usme, horarios TEAS"
       />
       <Menu
         className="text-foreground hover:text-foreground/80"
         textColor="text-foreground hover:text-foreground/80"
         detailsColor=""
         lineColor="bg-foreground/20"
+        logo="logo-blanco.svg"
       />
       <div className="w-full px-4 sm:px-6 md:px-10 lg:px-40">
         <Suspense fallback={<LoadingSpinner size="md" />}>

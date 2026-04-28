@@ -12,21 +12,16 @@ interface Router3DViewerProps {
 }
 
 const infoData = [
-  {
-    id: 1,
-    title: "24/7",
-    description: "Soporte técnico",
-    image: "/cards/24-7.svg",
-  },
+  
   {
     id: 2,
     title: "Megas simétricas",
-    description: "Velocidad equilibrada",
+    description: "Velocidad de alto nivel",
     image: "/cards/up-down.svg",
   },
   {
     id: 3,
-    title: "Alta velocidad",
+    title: "Velocidad ultra rápida",
     description: "1 Ms de respuesta",
     image: "/cards/speed-test.svg",
   },
@@ -97,10 +92,10 @@ function Router3DViewer({ className = "", contentOnly = false }: Router3DViewerP
       {!contentOnly && (
         <div className="absolute flex flex-col items-center justify-center z-0 pointer-events-none px-4 -top-0">
           <h1 className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl text-white font-bold leading-tight tracking-wide text-center mb-2">
-            Disfruta del internet más veloz
+            Experimenta una conexión de alta velocidad
           </h1>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-extrabold leading-tight tracking-wide text-center">
-            con nuestro módem WiFi 6
+           como nunca antes
           </h1>
         </div>
       )}

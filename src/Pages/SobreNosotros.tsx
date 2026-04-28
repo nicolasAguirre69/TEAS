@@ -144,13 +144,13 @@ export default function SobreNosotros() {
   return (
     <>
       <SEO
-        title="Sobre Nosotros - Inttelgo | Internet 100% Fibra Óptica en Soacha y Bogotá"
-        description="Conoce a Inttelgo, empresa de telecomunicaciones especializada en internet 100% fibra óptica para estratos 0, 1 y 2. Red FTTH en Soacha y Ciudad Bolívar. Baja latencia, alta velocidad y soporte técnico ágil."
-        keywords="sobre inttelgo, inttelgo empresa, internet soacha, fibra óptica soacha, internet ciudad bolívar, internet estratos bajos, FTTH soacha, telecomunicaciones soacha, inttelgo historia"
-        ogTitle="Sobre Nosotros - Inttelgo | Internet 100% Fibra Óptica"
-        ogDescription="Empresa de telecomunicaciones especializada en internet 100% fibra óptica para estratos 0, 1 y 2. Red FTTH en Soacha y Ciudad Bolívar."
-        ogUrl="https://inttelgo.com/sobre-nosotros"
-        canonical="https://inttelgo.com/sobre-nosotros"
+        title="Sobre Nosotros - TEAS | Internet 100% Fibra Óptica en Usme"
+        description="Conoce a TEAS, empresa de telecomunicaciones especializada en internet 100% fibra óptica para estratos 0, 1 y 2. Red FTTH en Usme. Baja latencia, alta velocidad y soporte técnico ágil."
+        keywords="sobre TEAS, TEAS empresa, internet usme, fibra óptica usme, internet estratos bajos, FTTH usme, telecomunicaciones usme, TEAS historia"
+        ogTitle="Sobre Nosotros - TEAS | Internet 100% Fibra Óptica"
+        ogDescription="Empresa de telecomunicaciones especializada en internet 100% fibra óptica para estratos 0, 1 y 2. Red FTTH en Usme."
+        ogUrl="https://teas.com.co/sobre-nosotros"
+        canonical="https://teas.com.co/sobre-nosotros"
       />
       <div className="w-full flex flex-col space-y-12 bg-muted/30">
         <Suspense fallback={<LoadingSpinner fullScreen size="xl" />}>

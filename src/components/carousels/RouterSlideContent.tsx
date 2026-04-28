@@ -39,10 +39,10 @@ export function RouterSlideContent({ children }: RouterSlideContentProps) {
         {/* Título */}
         <div className="absolute flex flex-col items-center justify-center z-0 pointer-events-none px-4 -top-0">
           <h1 className="text-xl sm:text-2xl lg:text-4xl xl:text-5xl text-white font-bold leading-tight tracking-wide text-center mb-2">
-            Disfruta del internet más veloz
+            Experimenta una conexión de alta velocidad 
           </h1>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-extrabold leading-tight tracking-wide text-center">
-            con nuestro módem WiFi 6
+            como nunca antes
           </h1>
         </div>
         {children}

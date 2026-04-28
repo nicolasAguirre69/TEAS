@@ -488,8 +488,8 @@ function PrincipalInfo() {
         {/* Menú siempre visible encima */}
         <Menu
           className="text-white bg-transparent"
-          logo="logo-blanco.svg"
-          detailsColor=""
+          logo="logo-negro.svg"
+          detailsColor = "invert brightness-0"
         />
 
         {/* Carousel: altura 100% del contenido, sin mínimos que corten */}

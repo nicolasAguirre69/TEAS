@@ -95,21 +95,22 @@ function PlanInternetPage() {
   return (
     <>
       <SEO
-        title="Planes de Internet 100% Fibra Óptica - Inttelgo | Internet Hogar de Alta Velocidad"
+        title="Planes de Internet 100% Fibra Óptica - TEAS | Internet Hogar de Alta Velocidad"
         description="Planes de internet 100% fibra óptica para tu hogar. Velocidades desde 200 Mbps hasta 920 Mbps. Internet ilimitado, velocidad simétrica, soporte 24/7. Plan Gamer disponible con IP pública y NAT abierta."
-        keywords="planes de internet, internet fibra óptica, internet hogar, internet 100% fibra óptica, planes internet inttelgo, internet alta velocidad, internet ilimitado, plan gamer, internet simétrico, fibra óptica bogotá, internet soacha"
-        ogTitle="Planes de Internet 100% Fibra Óptica - Inttelgo"
+        keywords="planes de internet, internet fibra óptica, internet hogar, internet 100% fibra óptica, planes internet TEAS, internet alta velocidad, internet ilimitado, plan gamer, internet simétrico, fibra óptica Usme, internet Usme"
+        ogTitle="Planes de Internet 100% Fibra Óptica - TEAS"
         ogDescription="Planes de internet 100% fibra óptica para tu hogar. Velocidades desde 200 Mbps hasta 920 Mbps. Internet ilimitado y velocidad simétrica."
-        ogUrl="https://inttelgo.com/planes/internet"
-        canonical="https://inttelgo.com/planes/internet"
+        ogUrl="https://teas.com.co/planes/internet"
+        canonical="https://teas.com.co/planes/internet"
       />
       <div className="w-full flex flex-col">
         {/* Navbar + Fondo con grafo */}
         <Suspense fallback={<LoadingSpinner fullScreen size="xl" />}>
-          <BannerPlanes
-            image="internet/internet-fibra-optica-banner.webp"
-            className="bg-gradient-to-r from-teal-400 via-teal-600 to-teal-800"
-          >
+            <BannerPlanes
+              image="internet/internet-fibra-optica-banner.webp"
+              className="bg-gradient-to-b from-teal-600 via-teal-600 to-teal-800"
+
+            >
             <section className="flex flex-col items-center justify-center text-center">
               <Badge
                 variant="orange"
@@ -121,17 +122,17 @@ function PlanInternetPage() {
               <h2 className="max-w-3xl sm:max-w-4xl text-5xl sm:text-5xl lg:text-6xl xl:text-7xl text-teal-50 font-extrabold leading-tight tracking-wide drop-shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
                 <span className="block">
                   Los planes{" "}
-                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
+                 <span className="block">
                     más veloces
                   </span>
                 </span>
                 <span className="block mt-1">
                   de{" "}
-                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
+                  <span className="">
                     internet
                   </span>{" "}
                   para tu{" "}
-                  <span className="bg-gradient-to-r from-teal-400  to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(45,66,88,0.5)]">
+                  <span className="">
                     hogar.
                   </span>
                 </span>

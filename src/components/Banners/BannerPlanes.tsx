@@ -28,7 +28,7 @@ const BannerPlanes = ({
       </Suspense>
       <Menu
         className={"text-white hover:text-white/80 bg-transparent"}
-        logo="logo-monocromatico.svg"
+        logo="logo-negro.svg"
       />
       <div
         className={cn(

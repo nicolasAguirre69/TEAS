@@ -212,13 +212,13 @@ export default function ContactUs() {
   return (
     <>
       <SEO
-        title="Contacto Inttelgo - Líneas de Atención y Soporte | Internet Hogar"
-        description="Contáctanos en Inttelgo. Líneas de ventas y soporte técnico 24/7. WhatsApp, correo electrónico y formulario de contacto. Internet hogar 100% fibra óptica en Bogotá y Soacha."
-        keywords="contacto inttelgo, líneas de atención inttelgo, soporte técnico inttelgo, ventas inttelgo, whatsapp inttelgo, atención al cliente inttelgo, soporte 24/7 inttelgo"
-        ogTitle="Contacto Inttelgo - Líneas de Atención y Soporte"
-        ogDescription="Contáctanos en Inttelgo. Líneas de ventas y soporte técnico 24/7. Internet hogar 100% fibra óptica."
-        ogUrl="https://inttelgo.com/contacto"
-        canonical="https://inttelgo.com/contacto"
+        title="Contacto TEAS - Líneas de Atención y Soporte | Internet Hogar"
+        description="Contáctanos en TEAS. Líneas de ventas y soporte técnico 24/7. WhatsApp, correo electrónico y formulario de contacto. Internet hogar 100% fibra óptica en Usme."
+        keywords="contacto TEAS, líneas de atención TEAS, soporte técnico TEAS, ventas TEAS, whatsapp TEAS, atención al cliente TEAS, soporte 24/7 TEAS"
+        ogTitle="Contacto TEAS - Líneas de Atención y Soporte"
+        ogDescription="Contáctanos en TEAS. Líneas de ventas y soporte técnico 24/7. Internet hogar 100% fibra óptica."
+        ogUrl="https://teas.com.co/contacto"
+        canonical="https://teas.com.co/contacto"
       />
       <div>
         <Menu
@@ -226,6 +226,7 @@ export default function ContactUs() {
           textColor="text-black hover:text-black/80"
           detailsColor=""
           lineColor="bg-black/50"
+          logo="logo-blanco.svg"
         />
         <div className="w-full bg-white py-12 px-4 sm:px-6 md:px-10 lg:px-20 space-y-12">
           <div className="mx-auto grid w-full max-w-6xl gap-12 lg:grid-cols-[1.8fr_1fr] lg:items-center">
