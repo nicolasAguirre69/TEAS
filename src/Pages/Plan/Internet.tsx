@@ -21,18 +21,7 @@ const planFeatures = [
 ];
 
 const plansData = [
-  {
-    title: "Plan Gamer",
-    speed: "920",
-    price: "",
-    category: "Gamer",
-    caracteristicas: [
-      "¡IP PUBLICA!",
-      "Módem 5G con wifi",
-      "NAT ABIERTA LAS 24/7",
-    ],
-    extras: [],
-  },
+  
   {
     title: "Plan 200 Mbps",
     speed: "200",
@@ -86,6 +75,18 @@ const plansData = [
       "Teletrabajo intensivo",
       "Servidores locales o acceso remoto",
       "Descargas ultra rápidas",
+    ],
+    extras: [],
+  },
+  {
+    title: "Plan Gamer",
+    speed: "920",
+    price: "",
+    category: "Gamer",
+    caracteristicas: [
+      "¡IP PUBLICA!",
+      "Módem 5G con wifi",
+      "NAT ABIERTA LAS 24/7",
     ],
     extras: [],
   }
@@ -187,74 +188,31 @@ function PlanInternetPage() {
 
           </BannerPlanes>
         </Suspense>
-
         {/* Sección de planes */}
         <div className="w-full flex justify-center items-center">
+          
           <Suspense fallback={<LoadingSpinner size="lg" />}>
+          
             <InternetPlans plansData={plansData} />
           </Suspense>
         </div>
 
         {/* Sección de beneficios */}
         <div className="w-full bg-white px-4 sm:px-6 md:px-10">
-          <div className="sm:w-[90%] md:w-full lg:w-[80%] mx-auto">
-            <Suspense fallback={<LoadingSpinner size="md" />}>
-              <AnimatedLines className="mb-6" />
-            </Suspense>
-            <div className="space-y-6 px-4 md:px-0">
-              <div className="space-y-4">
-                <div className="inline-block">
-                  <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-teal-500 to-teal-600 text-white text-sm font-semibold uppercase tracking-wide shadow-lg shadow-teal-500/30 mb-4">
-                    Internet de alta calidad
-                  </span>
-                </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
-                  <span className="text-gray-900">
-                    INTERNET RÁPIDO Y ESTABLE PARA TU HOGAR
-                  </span>
-                </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full" />
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
-                  Optimiza tu experiencia digital con planes de fibra óptica
-                  diseñados para ofrecer el mejor desempeño y{" "}
-                  <span className="font-semibold text-teal-600">
-                    latencias bajas
-                  </span>
-                  .
-                </p>
-              </div>
+  <div className="sm:w-[90%] md:w-full lg:w-[80%] mx-auto">
 
-              <div className="pt-6 space-y-5">
-                <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-lg shadow-teal-500/30">
-                    <Check className="h-5 w-5 text-white" />
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-                    Nuestros planes incluyen todo lo que necesitas:
-                  </h3>
-                </div>
+   
 
-                <Card className="p-6 md:p-8">
-                  <ul className="space-y-4">
-                    {planFeatures.map((feature, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-4 group hover:translate-x-1 transition-transform duration-300"
-                      >
-                        <div className="flex-shrink-0 w-7 h-7 rounded-full bg-gradient-to-br from-teal-500 to-teal-600 flex items-center justify-center shadow-md shadow-teal-500/30 group-hover:shadow-lg group-hover:shadow-teal-500/50 transition-all duration-300 group-hover:scale-110">
-                          <Check className="h-4 w-4 text-white" />
-                        </div>
-                        <span className="text-gray-800 text-base md:text-lg font-medium leading-relaxed pt-0.5 group-hover:text-gray-900 transition-colors">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="space-y-6 px-4 md:px-0">
+
+      
+
+      {/* Beneficios */}
+      
+
+    </div>
+  </div>
+</div>
       </div >
       <br />
     </>
