@@ -111,14 +111,14 @@ const carouselData = [
           <div className="text-center mb-12 md:mb-16 space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(147,51,234,0.5)]">
-                Llega a la estratosfera digital
+                Lleva tu experiencia online al máximo
               </span>
             </h1>
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-              con nuestro{" "}
+              con un{" "}
               <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
-                  plan gamer
+                  plan gamer rápido y estable.
                 </span>
               </span>
             </p>
@@ -134,10 +134,10 @@ const carouselData = [
                     <GeminiStar size={24} className="text-white" />
                     <div>
                       <CardTitle className="text-xl md:text-2xl text-white">
-                        Bajas latencias
+                        Latencias ultrabajas
                       </CardTitle>
                       <CardDescription className="text-white/70 text-base">
-                        Ping ultra bajo para gaming competitivo
+                        que te dan ventaja en cada partida
                       </CardDescription>
                     </div>
                   </div>
@@ -151,10 +151,10 @@ const carouselData = [
                     <div>
 
                       <CardTitle className="text-xl md:text-2xl text-white">
-                        NAT abierta
+                        Conexión con NAT abierta
                       </CardTitle>
                       <CardDescription className="text-white/70 text-base">
-                        Conexión directa sin restricciones
+                        para jugar sin restricciones
                       </CardDescription>
                     </div>
                   </div>
@@ -171,7 +171,7 @@ const carouselData = [
                         IPV6
                       </CardTitle>
                       <CardDescription className="text-white/70 text-base">
-                        Tecnología de próxima generación
+                        para una red más rápida y eficiente.
                       </CardDescription>
                     </div>
                   </div>
@@ -196,7 +196,7 @@ const carouselData = [
                     <CardTitle className="text-center">
                       <div className="text-8xl md:text-9xl font-black">
                         <span className="bg-gradient-to-b from-teal-300 via-teal-400 to-teal-600 bg-clip-text text-transparent drop-shadow-[0_0_40px_rgba(0,174,157,0.8)]">
-                          500
+                          920
                         </span>
                       </div>
                     </CardTitle>
@@ -214,16 +214,6 @@ const carouselData = [
                     </h3>
                   </CardContent>
 
-                  <CardFooter className="flex justify-center pt-2">
-                    <div className="flex gap-1">
-                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
-                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
-                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
-                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
-                      <Star className="w-4 h-4 text-teal-400 fill-teal-400" />
-                    </div>
-                  </CardFooter>
-
                   {/* Partículas decorativas */}
                 </Card>
               </div>
@@ -239,7 +229,7 @@ const carouselData = [
                       <div className="flex items-center gap-2">
                         <Zap className="w-4 h-4 text-white fill-white" />
                         <span className="font-bold text-sm uppercase tracking-wide">
-                          Fibra óptica 100% simétrica
+                          100% Fibra óptica 
                         </span>
                       </div>
                     </div>
@@ -248,16 +238,7 @@ const carouselData = [
                 <div className="absolute top-9 -left-2 z-20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 group-hover:-translate-x-1">
                   <div className="relative">
                     {/* Badge principal */}
-                    <div className="relative bg-gradient-to-br from-[#00ae9d] via-[#00ae9d] to-[#2d4258] text-white px-4 py-2 rounded-lg shadow-xl">
-                      <div className="flex items-center gap-2">
-
-                        <Star className="w-4 h-4 text-white fill-white" />
-
-                        <span className="font-bold text-sm uppercase tracking-wide">
-                          Oferta
-                        </span>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
 
@@ -271,7 +252,7 @@ const carouselData = [
                     <DollarSign className="w-10 h-10 text-teal-400 drop-shadow-lg mt-1" />
                     <div className="flex flex-col">
                       <span className="text-5xl md:text-6xl font-black bg-gradient-to-r from-teal-300 to-teal-500 bg-clip-text text-transparent">
-                        100.000
+                        150.000
                       </span>
                       <span className="text-lg text-white/80 font-semibold">
                         pesos colombianos / mes
@@ -288,7 +269,7 @@ const carouselData = [
                   >
                     <Link to="/planes/internet">
                       <ChevronsUp className="w-5 h-5 mr-2" />
-                      ¡Despega ahora!
+                      ¡Saber más!
                     </Link>
                   </Button>
                 </CardFooter>
@@ -313,6 +294,7 @@ const carouselData = [
             </style>
           </div>
         </div>
+        <br />
       </div>
     ),
   },

@@ -159,8 +159,8 @@ function HomePage() {
         <div className="bg-black flex flex-col items-center justify-center">
           {/* BannerHome se carga directamente (no lazy) porque es el elemento LCP */}
           <BannerHome />
-          <h2 className="text-5xl text-primary-foreground text-center px-4">
-            Disfruta la oferta de canales más completa{" "}
+          <h2 className="text-3xl text-primary-foreground text-center px-4">
+            Tenemos para ti la oferta de canales más completa{" "}
             <span className="font-extrabold">disponible en toda Usme.</span>
           </h2>
           <div className="w-full max-w-full overflow-hidden">

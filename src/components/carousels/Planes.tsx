@@ -95,15 +95,14 @@ export default function Planes() {
   };
 
   return (
-    <div className="w-full overflow-hidden relative py-2 md:py-8 flex flex-col items-center justify-center">
-      
-      {/* TÍTULO */}
-      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-8">
-        
-        <br />
-        <span className="text-[#00C853] font-extrabold">
-          mismo precio
-        </span>
+    <div className="w-full overflow-hidden relative py-4 md:py-8 flex flex-col items-center justify-center px-4 sm:px-6">
+  
+  {/* TÍTULO */}
+  <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-6 max-w-4xl">
+    
+    <span className="text-white font-extrabold leading-snug">
+      Disfruta de una conexión más rápida y potente, mayor velocidad incluida en tu plan sin pagar de más.
+    </span>
       </h2>
 
       <div className="w-full md:h-[600px] container mx-auto px-4 md:px-16 lg:px-32 flex flex-col items-center justify-center">
@@ -172,7 +171,7 @@ export default function Planes() {
 
             {/* Shine effect */}
             <span
-              className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent"
+              className="pt-6 absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent"
               style={{
                 animation: "shine 3s ease-in-out infinite",
                 transform: "translateX(-100%)",
