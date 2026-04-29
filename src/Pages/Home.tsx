@@ -160,8 +160,8 @@ function HomePage() {
           {/* BannerHome se carga directamente (no lazy) porque es el elemento LCP */}
           <BannerHome />
           <h2 className="text-5xl text-primary-foreground text-center px-4">
-            La mejor parrilla de{" "}
-            <span className="font-extrabold">canales de todo Usme</span>
+            Disfruta la oferta de canales más completa{" "}
+            <span className="font-extrabold">disponible en toda Usme.</span>
           </h2>
           <div className="w-full max-w-full overflow-hidden">
             <Suspense fallback={<LoadingSpinner size="lg" />}>
